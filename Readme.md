@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Ананьев](https://up.htmlacademy.ru/adaptive/14/user/390075).
-* Наставник: `Неизвестно`.
+* Наставник: `Дмитрий Казанцев`.
 
 ---
 
