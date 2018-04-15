@@ -10,12 +10,12 @@
         <img class="page-header__logo-image" src="http://placehold.it/90x120" alt="логотип седона" width="90" height="120">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle "  type="button">Открыть меню</button>
+        <button class="main-nav__toggle"  type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a>Главная</a></li>
-          <li class="site-list__item"><a href="galery.html">фото и видео</a></li>
-          <li class="site-list__item"><a href="feedback.html">форма отзыва</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru">html academy</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="galery.html">фото и видео</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="feedback.html">форма отзыва</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">html academy</a></li>
         </ul>
       </nav>
     </header>
@@ -28,18 +28,18 @@
           <li class="sedona-reason__item sedona-reason__item-image">
             <h3 class="sedona-reason__reason-title">Настоящий городок</h3>
             <p class="sedon-reason__reason-number">№1</p>
-            <p class="sedon-reason__reason-description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <p class="sedon-reason__reason-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </li>
-          <li class="sedona-reason__feature sedona-reason__feature-house">
+          <li class="sedona-reason__feature sedona-reason__feature--house">
             <h3 class="sedona-reason__feature-title">Жилье</h3>
             <p class="sedon-reason__feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="sedona-reason__feature">
-            <h3 class="sedona-reason__feature-title sedona-reason__feature-food">Еда</h3>
+          <li class="sedona-reason__feature sedona-reason__feature--food">
+            <h3 class="sedona-reason__feature-title">Еда</h3>
             <p class="sedon-reason__feature-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="sedona-reason__feature">
-            <h3 class="sedona-reason__feature-title sedona-reason__feature-suvenir">Сувениры</h3>
+          <li class="sedona-reason__feature sedona-reason__feature--souvenir">
+            <h3 class="sedona-reason__feature-title">Сувениры</h3>
             <p class="sedon-reason__feature-description">Не только китайского, но и местного производства!</p>
           </li>
           <li class="sedona-reason__item sedona-reason__item-image">
@@ -68,11 +68,11 @@
         <h2 class="visually-hidden">Забронировать дату поездки</h2>
         <h3 class="booking__title">Заинтересовались?</h3>
         <p class="booking__intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="booking-button" href="booking-form.html">Найти гостиницу</a>
+        <a class="booking__button" href="booking-form.html">Найти гостиницу</a>
       </section>
       <section class="sedona-map">
         <img src="http://placehold.it/320x350" alt="Карта" width="320" height="350">
-          </section>
+      </section>
     </main>
     <footer class="page-footer">
     <p class="page-footer__heshteg">Visitsedona</p>
@@ -91,7 +91,7 @@
       </div>
       <p class="footer-copyright">
         <span class="footer-copyright__text">Разработано</span>
-        <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">   </a>
+        <a class="footer-copyright__logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">html академия</span></a>
       </p>
     </footer>
   </body>

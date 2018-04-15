@@ -10,12 +10,12 @@
         <img class="page-header__logo-image" src="http://placehold.it/90x120" alt="логотип седона" width="90" height="120">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle "  type="button">Открыть меню</button>
+        <button class="main-nav__toggle"  type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="galery.html">фото и видео</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="galery.html">фото и видео</a></li>
           <li class="site-list__item"><a>форма отзыва</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru">html academy</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">html academy</a></li>
         </ul>
       </nav>
     </header>
@@ -25,21 +25,22 @@
         <h1 class="sedona-feedback__title">Оставьте свой отзыв</h1>
         <p class="sedona-feedback__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="sedona-feedback__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="sedona-feedback_user-name">
+          <fieldset class="sedona-feedback__user-name">
             <legend class="sedona-feedback__legend">Представьтесь:</legend>
             <label class="sedona-feedback__label-name" for="firstname">Имя*:</label>
             <input class="sedona-feedback__input-name" type="text" id="firstname" name="user-name" placeholder="Петр">
             <label class="sedona-feedback__label-name" for="lastname" >Фамилия*:</label>
-            <input class="sedona-feedback__input-name" type="text" id="lastname" name="user-name" placeholder="           Иванов">
+            <input class="sedona-feedback__input-name" type="text" id="lastname" name="user-name" placeholder="Иванов">
             <label class="sedona-feedback__label-name" for="middlename">Отчество:</label>
             <input class="sedona-feedback__input-name" type="text" id="middlename" name="user-name" placeholder="Александрович">
           </fieldset>
           <fieldset class="sedona-feedback__user-contacts">
             <legend class="sedona-feedback__legend">Контактная информация:</legend>
             <label class="sedona-feedback__label-contacts" for="user-phone">Контактный телефон*:</label>
-            <input class="sedona-feedback__input-contacts" type="text" id="user-phone" name="user-contacts" placeholder="Введите телефон">
+            <input class="sedona-feedback__input-contacts" type="tel" id="user-phone" name="user-contacts" placeholder="Введите телефон">
+
             <label class="sedona-feedback__label-contacts" for="user-email">Электронная почта*:</label>
-            <input class="sedona-feedback__input-contacts" type="text" id="user-email" name="user-contacts" placeholder="Введите e-mail">
+            <input class="sedona-feedback__input-contacts" type="email" id="user-email" name="user-contacts" placeholder="Введите e-mail">
           </fieldset>
           <fieldset class="sedona-feedback__impression">
             <legend class="sedona-feedback__legend">Ваше общее впечатление:</legend>
@@ -67,14 +68,14 @@
           </fieldset>
           <button class="sedona-feedback__button" type="submit" name="send-comment">Отправить отзыв</button>
         </form>
-          </section>
+      </section>
     </main>
     <footer class="page-footer">
       <p class="page-footer__heshteg">Visitsedona</p>
       <div class="social-block">
         <ul class="social-block__list">
           <li class="social-block__item">
-            <a class="social-block__button" href="#"><span class="visually-hidden">Twitter</span> </a>
+            <a class="social-block__button" href="#"><span class="visually-hidden">Twitter</span></a>
           </li>
           <li class="social-block__item">
             <a class="social-block__button" href="#"><span class="visually-hidden">Facebook</span></a>
@@ -83,11 +84,11 @@
             <a class="social-block__button" href="#"><span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
-            </div>
+      </div>
       <p class="footer-copyright">
         <span class="footer-copyright__text">Разработано</span>
-        <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">   </a>
-          </p>
+        <a class="footer-copyright__logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">html академия</span></a>
+      </p>
     </footer>
   </body>
 </html>
