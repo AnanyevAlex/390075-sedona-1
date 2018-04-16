@@ -14,59 +14,58 @@
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="galery.html">фото и видео</a></li>
-          <li class="site-list__item"><a>форма отзыва</a></li>
+          <li class="site-list__item"><a class="site-list__link">форма отзыва</a></li>
           <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">html academy</a></li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
+      <img class="main-img" src="http://placehold.it/320x390" alt="Седона" width="320" height="390">
       <section class="sedona-feedback">
-        <img src="http://placehold.it/320x160" alt="Седона" width="320" height="160">
         <h1 class="sedona-feedback__title">Оставьте свой отзыв</h1>
         <p class="sedona-feedback__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <form class="sedona-feedback__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="sedona-feedback__user-name">
-            <legend class="sedona-feedback__legend">Представьтесь:</legend>
-            <label class="sedona-feedback__label-name" for="firstname">Имя*:</label>
-            <input class="sedona-feedback__input-name" type="text" id="firstname" name="user-name" placeholder="Петр">
-            <label class="sedona-feedback__label-name" for="lastname" >Фамилия*:</label>
-            <input class="sedona-feedback__input-name" type="text" id="lastname" name="user-name" placeholder="Иванов">
-            <label class="sedona-feedback__label-name" for="middlename">Отчество:</label>
-            <input class="sedona-feedback__input-name" type="text" id="middlename" name="user-name" placeholder="Александрович">
+        <form class="sedona-feedback__form info-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="info-form__fieldset">
+            <legend class="info-form__legend">Представьтесь:</legend>
+            <label class="info-form__label" for="firstname">Имя*:</label>
+            <input class="info-form__input" type="text" id="firstname" name="user-name" placeholder="Петр">
+            <label class="info-form__label" for="lastname" >Фамилия*:</label>
+            <input class="info-form__input" type="text" id="lastname" name="user-name" placeholder="Иванов">
+            <label class="info-form__label" for="middlename">Отчество:</label>
+            <input class="info-form__input" type="text" id="middlename" name="user-name" placeholder="Александрович">
           </fieldset>
-          <fieldset class="sedona-feedback__user-contacts">
-            <legend class="sedona-feedback__legend">Контактная информация:</legend>
-            <label class="sedona-feedback__label-contacts" for="user-phone">Контактный телефон*:</label>
-            <input class="sedona-feedback__input-contacts" type="tel" id="user-phone" name="user-contacts" placeholder="Введите телефон">
-
-            <label class="sedona-feedback__label-contacts" for="user-email">Электронная почта*:</label>
-            <input class="sedona-feedback__input-contacts" type="email" id="user-email" name="user-contacts" placeholder="Введите e-mail">
+          <fieldset class="info-form__fieldset">
+            <legend class="info-form__legend">Контактная информация:</legend>
+            <label class="info-form__label" for="user-phone">Контактный телефон*:</label>
+            <input class="info-form__input" type="tel" id="user-phone" name="user-contacts" placeholder="Введите телефон">
+            <label class="info-form__label" for="user-email">Электронная почта*:</label>
+            <input class="info-form__input" type="email" id="user-email" name="user-contacts" placeholder="Введите e-mail">
           </fieldset>
-          <fieldset class="sedona-feedback__impression">
-            <legend class="sedona-feedback__legend">Ваше общее впечатление:</legend>
-            <label class="sedona-feedback__label-impression" for="positively">Скорее положительное</label>
-            <input class="sedona-feedback__input-impression" type="radio" name="impression" id="positively">
-            <label class="sedona-feedback__label-impression" for="negatively">Скорее отрицательное</label>
-            <input class="sedona-feedback__input-impression" type="radio" name="impression" id="negatively">
-            <label class="sedona-feedback__label-impression" for="complicate">Затрудняюсь ответить</label>
-            <input class="sedona-feedback__input-impression" type="radio" name="impression" id="complicate">
+          <fieldset class="info-form__fieldset">
+            <legend class="info-form__legend">Ваше общее впечатление:</legend>
+            <label class="info-form__label" for="positively">Скорее положительное</label>
+            <input class="info-form__input" type="radio" name="impression" id="positively">
+            <label class="info-form__label" for="negatively">Скорее отрицательное</label>
+            <input class="info-form__input" type="radio" name="impression" id="negatively">
+            <label class="info-form__label" for="complicate">Затрудняюсь ответить</label>
+            <input class="info-form__input" type="radio" name="impression" id="complicate">
           </fieldset>
-          <fieldset class="sedona-feedback__landmark">
-            <legend class="sedona-feedback__legend">Посещенные достопримечательности:</legend>
-            <label class="sedona-feedback__label-landmark" for="bridge">Мост Дьявола</label>
-            <input class="sedona-feedback__input-landmark" type="checkbox" checked name="landmark" id="bridge">
-            <label class="sedona-feedback__label-landmark" for="mountain">Гора-Колокол</label>
-            <input class="sedona-feedback__input-landmark" type="checkbox" checked name="landmark" id="mountain">
-            <label class="sedona-feedback__label-landmark" for="park">Слайд-парк</label>
-            <input class="sedona-feedback__input-landmark" type="checkbox" checked name="landmark" id="park">
-            <label class="sedona-feedback__label-landmark" for="rock">Красные скалы</label>
-            <input class="sedona-feedback__input-landmark" type="checkbox" name="landmark" id="rock">
+          <fieldset class="info-form__fieldset">
+            <legend class="info-form__legend">Посещенные достопримечательности:</legend>
+            <label class="info-form__label" for="bridge">Мост Дьявола</label>
+            <input class="info-form__input" type="checkbox" checked name="landmark" id="bridge">
+            <label class="info-form__label" for="mountain">Гора-Колокол</label>
+            <input class="info-form__input" type="checkbox" checked name="landmark" id="mountain">
+            <label class="info-form__label" for="park">Слайд-парк</label>
+            <input class="info-form__input" type="checkbox" checked name="landmark" id="park">
+            <label class="info-form__label" for="rock">Красные скалы</label>
+            <input class="info-form__input" type="checkbox" name="landmark" id="rock">
           </fieldset>
-          <fieldset class="sedona-feedback__comment">
-            <legend class="sedona-feedback__legend">Опишите свои эмоции:</legend>
-            <textarea rows="10" cols="45" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+          <fieldset class="info-form__fieldset">
+            <legend class="info-form__legend">Опишите свои эмоции:</legend>
+            <textarea class="info-form__text" rows="10" cols="45" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="sedona-feedback__button" type="submit" name="send-comment">Отправить отзыв</button>
+          <button class="info-form__button" type="submit" name="send-comment">Отправить отзыв</button>
         </form>
       </section>
     </main>
