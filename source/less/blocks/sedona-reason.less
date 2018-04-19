@@ -6,88 +6,80 @@
 
 .sedona-reason__item {
   padding: 0 15px;
+
+  &--image {
+    position: relative;
+    height: 412px;
+    padding: 40px 0 0 0;
+    background-color: @sedona-main-color;
+    color: #ffffff;
+  }
+
+  &--image-decore {
+    height: 412px;
+    padding-top: 78px;
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 320px;
+      height: 40px;
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--image-block {
+    padding: 0 15px;
+    margin-bottom: 38px;
+  }
 }
 
-.sedona-reason__item--image {
-  position: relative;
-  height: 412px;
-  padding: 40px 0 0 0;
-  background-color: @sedona-main-color;
-  color: #ffffff;
-}
-
-.sedona-reason__item--image-decore {
-  height: 412px;
-  padding-top: 78px;
-  margin-bottom: 20px;
-}
-
-.sedona-reason__item--image-decore::before {
-  content: "";
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 320px;
-  height: 40px;
-  background-image: url("../img/bg-triangle.svg");
-  background-repeat: no-repeat;
-}
-
-.sedona-reason__item--image-block {
-  padding: 0 15px;
-  margin-bottom: 38px;
-}
-
-.sedona-reason__reason-title,
-.sedon-reason__reason-description,
-.sedon-reason__reason-number {
+.sedona-reason__reason-title {
   text-align: center;
-}
-
-.sedona-reason__reason-title,
-.sedona-reason__feature-title {
-  margin: 0;
+  margin: 0 0 4px 0;
   font-size: @sedona-title-size;
   font-family: @sedona-title-font;
   text-transform: uppercase;
 }
 
-.sedon-reason__feature-description,
-.sedon-reason__reason-description,
-.sedon-reason__reason-number {
+.sedon-reason__reason-description {
+  text-align: center;
   margin: 0;
   font-size: @sedona-regular-size;
   text-transform: uppercase;
-}
-
-.sedona-reason__reason-title {
-  margin-bottom: 4px;
+  line-height: 23px;
 }
 
 .sedon-reason__reason-number {
-  margin-bottom: 13px;
-}
-
-.sedon-reason__reason-description {
-  line-height: 23px;
+  text-align: center;
+  margin: 0 0 13px 0;
+  font-size: @sedona-regular-size;
+  text-transform: uppercase;
 }
 
 .sedona-reason__feature {
   padding: 15px 20px 0 70px;
   margin-bottom: 14px;
   min-height: 80px;
+
+  &--food {
+    margin-bottom: 38px;
+  }
 }
 
 .sedona-reason__feature-title {
-  margin-bottom: 13px;
+  margin: 0 0 13px 0;
+  font-size: @sedona-title-size;
+  font-family: @sedona-title-font;
+  text-transform: uppercase;
 }
 
 .sedon-reason__feature-description {
   line-height: 21px;
-}
-
-.sedona-reason__feature--food {
-  margin-bottom: 38px;
 }
 
 .senoda-reason__bg {

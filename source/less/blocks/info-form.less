@@ -3,9 +3,7 @@
   padding: 0 20px;
 }
 
-.info-form__fieldset,
-.info-form__input,
-.info-form__text {
+.info-form__fieldset {
   border: none;
   text-align: center;
   margin: 0;
@@ -20,37 +18,48 @@
   margin-bottom: 15px;
 }
 
-.info-form__label,
-.info-form__input,
-.info-form__text {
-  text-transform: none;
-}
-
-.info-form__label--name {
-  font-family: "ptsans", "arial", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-.info-form__text,
 .info-form__input {
-  color: #000000;
+  border: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: @sedona-title-size;
+  font-family: @sedona-title-font;
   font: inherit;
-}
-
-.info-form__input-checkbox,
-.info-form__input-radio {
-  padding-left: 62px;
+  color: rgba(0, 0, 0, 1);
 }
 
 .info-form__text {
   box-sizing: border-box;
-  width: 100%;
+  border: none;
   height: 160px;
+  width: 100%;
   text-align: left;
+  margin: 0 0 45px 0;
   padding: 20px;
-  margin-bottom: 45px;
+  font-size: @sedona-title-size;
+  font-family: @sedona-title-font;
+  font: inherit;
+  color: rgba(0, 0, 0, 1);
   background-color: #f2f2f2;
+}
+
+.info-form__label {
+  text-transform: none;
+
+  &--name {
+    font-family: "ptsans", "arial", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+
+.info-form__input-checkbox {
+  padding-left: 62px;
+}
+
+.info-form__input-radio {
+  padding-left: 62px;
 }
 
 .info-form__button {

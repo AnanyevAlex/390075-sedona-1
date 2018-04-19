@@ -5,6 +5,10 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  &--min-img {
+    height: 160px;
+  }
 }
 
 .main-img__text-index {
@@ -16,6 +20,14 @@
   background-image: url("../img/text-sedona-index.svg");
   background-repeat: no-repeat;
   background-size: contain;
+
+  .main-img--min-img & {
+    width: 235px;
+    height: 40px;
+    top: 50px;
+    left: 45px;
+    background-image: url("../img/text-sedona.svg");
+  }
 }
 
 .main-img__decore {
@@ -27,16 +39,4 @@
   background-image: url("../img/bg-intro-triangle-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.main-img--min-img {
-  height: 160px;
-}
-
-.main-img--min-img .main-img__text-index {
-  width: 235px;
-  height: 40px;
-  top: 50px;
-  left: 45px;
-  background-image: url("../img/text-sedona.svg");
 }
