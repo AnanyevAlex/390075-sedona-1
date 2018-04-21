@@ -1,6 +1,5 @@
 .main-img {
   position: relative;
-  width: 320px;
   height: 390px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -40,3 +39,23 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@media (min-width: @tablet-width) {
+  .main-img {
+    height: 520px;
+
+    &--min-img {
+      height: 290px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-img {
+
+    &--min-img {
+      height: 300px;
+    }
+  }
+}
+

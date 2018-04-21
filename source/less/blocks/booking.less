@@ -1,5 +1,6 @@
 .booking {
-  padding: 30px 20px 0 20px;
+  box-sizing: border-box;
+  padding: 30px 20px 40px 20px;
 }
 
 .booking__title {
@@ -21,7 +22,7 @@
 .booking__button {
   box-sizing: border-box;
   padding-top: 16px;
-  margin-bottom: 50px;
+  margin: 0 auto 0 auto;
   text-align: center;
   width: 280px;
   height: 58px;
@@ -34,4 +35,22 @@
     text-decoration: none;
     color: #ffffff;
   }
+}
+
+@media (min-width: @tablet-width) {
+  .booking {
+    min-height: 330px;
+  }
+  .booking__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .booking__button {
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+
 }

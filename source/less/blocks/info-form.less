@@ -1,6 +1,7 @@
 .info-form {
   margin-top: 34px;
   padding: 0 20px;
+  background-color: #ffffff;
 }
 
 .info-form__fieldset {
@@ -8,6 +9,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  outline: 1px solid green;
   font-size: @sedona-title-size;
   font-family: @sedona-title-font;
   text-transform: uppercase;
@@ -74,4 +76,49 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .info-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+    margin: 0;
+  }
+
+  .info-form__fieldset {
+    flex-shrink: 0;
+    width: 324px;
+
+    &--fullwidth {
+      width: 648px;
+    }
+
+    &--order {
+      order: -1;
+    }
+  }
+
+  .info-form__btn {
+    width: 648px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .info-form {
+    padding: 0 120px;
+  }
+
+  .info-form__fieldset {
+    width: 480px;
+
+    &--fullwidth {
+      width: 960px;
+    }
+  }
+
+  .info-form__btn {
+    width: 960px;
+  }
 }

@@ -33,37 +33,69 @@
             <p class="sedona-intro__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
           <ul class="sedona-galery__list">
-            <li class="sedona-galery__item photo">
-              <a class="photo__fullscreen-photo" href="#">
-                <img class="photo__img" src="img/photo-sunset-mobile@1x.jpg" alt="фото седоны" width="280" height="280">
-              </a>
-              <h3 class="photo__title">Неродные просторы</h3>
-              <p class="photo__author">Автор фото: Борис</p>
-              <p class="photo__likes">1350</p>
+            <li class="sedona-galery__item photo photo--main">
+              <div class="photo__img-block photo__img-block--main">
+                <a class="photo__fullscreen-photo" href="#">
+                  <img class="photo__img" src="img/photo-sunset-mobile@1x.jpg" alt="фото седоны" width="280" height="280">
+                </a>
+              </div>
+              <div class="photo__text-block">
+                <div class="photo__block-name">
+                  <h3 class="photo__title">Неродные просторы</h3>
+                  <p class="photo__author">Автор фото: Борис</p>
+                </div>
+                <div class="photo__block-like">
+                  <p class="photo__likes">1350</p>
+                </div>
+              </div>
             </li>
-            <li class="sedona-galery__item photo">
-              <a class="photo__fullscreen-photo" href="#">
-                <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" alt="фото седоны" width="280" height="280">
-              </a>
-              <h3 class="photo__title">Местная растительность</h3>
-              <p class="photo__author">Автор фото: Сергей</p>
-              <p class="photo__likes">143</p>
+            <li class="sedona-galery__item photo photo--another">
+              <div class="photo__img-block">
+                <a class="photo__fullscreen-photo" href="#">
+                  <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" alt="фото седоны" width="280" height="280">
+                </a>
+              </div>
+              <div class="photo__text-block">
+                <div class="photo__block-name">
+                  <h3 class="photo__title">Местная растительность</h3>
+                  <p class="photo__author">Автор фото: Сергей</p>
+                </div>
+                <div class="photo__block-like">
+                  <p class="photo__likes">143</p>
+                </div>
+              </div>
             </li>
-            <li class="sedona-galery__item photo">
-              <a class="photo__fullscreen-photo" href="#">
-                <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" alt="фото седоны" width="280" height="280">
-              </a>
-              <h3 class="photo__title">Дорога на север</h3>
-              <p class="photo__author">Автор фото: Петр</p>
-              <p class="photo__likes">96</p>
+            <li class="sedona-galery__item photo photo--another">
+              <div class="photo__img-block">
+                <a class="photo__fullscreen-photo" href="#">
+                  <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" alt="фото седоны" width="280" height="280">
+                </a>
+              </div>
+              <div class="photo__text-block">
+                <div class="photo__block-name">
+                  <h3 class="photo__title">Дорога на север</h3>
+                  <p class="photo__author">Автор фото: Петр</p>
+                </div>
+                <div class="photo__block-like">
+                  <p class="photo__likes">96</p>
+                </div>
+              </div>
             </li>
-            <li class="sedona-galery__item photo">
-              <a class="photo__fullscreen-photo" href="#">
-                <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" alt="фото седоны" width="280" height="280">
-              </a>
-              <h3 class="photo__title">Мост дьявола</h3>
-              <p class="photo__author">Автор фото: Антон</p>
-              <p class="photo__likes">254</p>
+            <li class="sedona-galery__item photo photo--another">
+              <div class="photo__img-block">
+                <a class="photo__fullscreen-photo" href="#">
+                  <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" alt="фото седоны" width="280" height="280">
+                </a>
+              </div>
+              <div class="photo__text-block">
+                <div class="photo__block-name">
+                  <h3 class="photo__title">Мост дьявола</h3>
+                  <p class="photo__author">Автор фото: Антон</p>
+                </div>
+                <div class="photo__block-like">
+                  <p class="photo__likes">254</p>
+                </div>
+              </div>
             </li>
           </ul>
           <div class="video-block">
@@ -71,7 +103,9 @@
               <h3 class="video-block__title">Все еще сомневаетесь?</h3>
               <p class="video-blcok__discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             </div>
-            <img class="video-block__video" src="img/video-mobile@1x.jpg" alt="видео седоны" width="320" height="205">
+            <div class="video-block__video">
+              <img class="video-block__video--img" src="img/video-mobile@1x.jpg" alt="видео седоны" width="320" height="205">
+            </div>
             <div class="video-block__player player">
               <div class="player__scale-block">
                 <div class="player__scale"></div>
@@ -99,8 +133,8 @@
           </li>
         </ul>
         <p class="page-footer__copyright">
-          <span class="page-footer__copyright--text">Разработано</span>
-          <a class="page-footer__copyright--logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">html академия</span></a>
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">html академия</span></a>
         </p>
       </footer>
     </div>

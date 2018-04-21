@@ -33,6 +33,7 @@
             <p class="sedona-intro__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="sedona-feedback__form info-form" action="https://echo.htmlacademy.ru" method="post">
+
             <fieldset class="info-form__fieldset">
               <legend class="info-form__legend">Представьтесь:</legend>
               <label class="info-form__label info-form__label--name" for="firstname">Имя*:</label>
@@ -42,14 +43,14 @@
               <label class="info-form__label info-form__label--name" for="middlename">Отчество:</label>
               <input class="info-form__input" type="text" id="middlename" name="user-name" value="Александрович">
             </fieldset>
-            <fieldset class="info-form__fieldset">
+            <fieldset class="info-form__fieldset info-form__fieldset--fullwidth">
               <legend class="info-form__legend">Контактная информация:</legend>
               <label class="info-form__label" for="user-phone">Контактный телефон*:</label>
               <input class="info-form__input" type="tel" id="user-phone" name="user-contacts" value="Введите телефон">
               <label class="info-form__label" for="user-email">Электронная почта*:</label>
               <input class="info-form__input" type="email" id="user-email" name="user-contacts" value="Введите e-mail">
             </fieldset>
-            <fieldset class="info-form__fieldset">
+            <fieldset class="info-form__fieldset info-form__fieldset--order">
               <legend class="info-form__legend">Ваше общее впечатление:</legend>
               <label class="info-form__label info-form__input-radio" for="positively">Скорее положительное</label>
               <input class="info-form__input visually-hidden" type="radio" name="impression" id="positively">
@@ -58,7 +59,7 @@
               <label class="info-form__label info-form__input-radio" for="complicate">Затрудняюсь ответить</label>
               <input class="info-form__input visually-hidden" type="radio" name="impression" id="complicate">
             </fieldset>
-            <fieldset class="info-form__fieldset">
+            <fieldset class="info-form__fieldset info-form__fieldset--fullwidth">
               <legend class="info-form__legend">Посещенные достопримечательности:</legend>
               <label class="info-form__label info-form__input-checkbox" for="bridge">Мост Дьявола</label>
               <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="bridge">
@@ -69,11 +70,13 @@
               <label class="info-form__label info-form__input-checkbox" for="rock">Красные скалы</label>
               <input class="info-form__input visually-hidden" type="checkbox" name="landmark" id="rock">
             </fieldset>
-            <fieldset class="info-form__fieldset">
+            <fieldset class="info-form__fieldset info-form__fieldset--fullwidth">
               <legend class="info-form__legend">Опишите свои эмоции:</legend>
               <textarea class="info-form__text" rows="10" cols="45" name="comment" value="">Опишите подробно все свои восторги</textarea>
             </fieldset>
-            <button class="info-form__button" type="submit" name="send-comment">Отправить отзыв</button>
+            <div class="info-form__btn">
+              <button class="info-form__button" type="submit" name="send-comment">Отправить отзыв</button>
+            </div>
           </form>
         </section>
       </main>
@@ -91,8 +94,8 @@
           </li>
         </ul>
         <p class="page-footer__copyright">
-          <span class="page-footer__copyright--text">Разработано</span>
-          <a class="page-footer__copyright--logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">html академия</span></a>
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">html академия</span></a>
         </p>
       </footer>
     </div>
