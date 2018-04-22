@@ -2,6 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
 }
 
 .sedona-reason__item {
@@ -18,7 +19,6 @@
   &--image-decore {
     height: 412px;
     padding-top: 78px;
-    margin-bottom: 20px;
 
     &::before {
       content: "";
@@ -32,10 +32,40 @@
     }
   }
 
-  &--image-block {
+  &--text-block-one {
     padding: 0 15px;
     margin-bottom: 38px;
   }
+
+  &--text-block-two {
+    padding: 0 15px;
+    margin-bottom: 38px;
+  }
+
+  &--featerus {
+    padding: 0;
+    margin: 0;
+  }
+
+  &--block {
+    padding: 0;
+  }
+}
+
+.sedona-reason__photo-reason-one {
+  width: 320px;
+  height: 260px;
+  background-image: url("../img/main-city-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sedona-reason__photo-reason-two {
+  width: 320px;
+  height: 260px;
+  background-image: url("../img/photo-bridge-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sedona-reason__reason-title {
@@ -61,25 +91,10 @@
   text-transform: uppercase;
 }
 
-.sedona-reason__feature {
-  padding: 15px 20px 0 70px;
-  margin-bottom: 14px;
-  min-height: 80px;
-
-  &--food {
-    margin-bottom: 38px;
-  }
-}
-
-.sedona-reason__feature-title {
-  margin: 0 0 13px 0;
-  font-size: @sedona-title-size;
-  font-family: @sedona-title-font;
-  text-transform: uppercase;
-}
-
-.sedon-reason__feature-description {
-  line-height: 21px;
+.sedona-reason__mini-block {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .senoda-reason__bg {
@@ -87,4 +102,52 @@
   background-color: #eeeeee;
   padding: 27px 35px 0 35px;
   min-height: 167px;
+}
+
+@media (min-width: @tablet-width) {
+  .sedona-reason__item {
+    min-height: 256px;
+
+    &--image {
+      display: flex;
+      flex-shrink: 0;
+      height: 256px;
+      padding: 0;
+      background-color: @sedona-main-color;
+      color: #ffffff;
+    }
+
+    &--image-decore {
+      &::before {
+        display: none;
+      }
+    }
+
+    &--text-block-one {
+      box-sizing: border-box;
+      margin: 0;
+      width: 33.3%;
+    }
+
+    &--text-block-two {
+      box-sizing: border-box;
+      order: 2;
+      margin: 0;
+      width: 33.3%;
+    }
+  }
+
+  .sedona-reason__photo-reason-one {
+    width: 66.6%;
+    height: 100%;
+  }
+
+  .sedona-reason__photo-reason-two {
+    width: 66.6%;
+    height: 100%;
+  }
+
+  .sedona-reason__mini-block {
+    display: flex;
+  }
 }

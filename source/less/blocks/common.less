@@ -20,7 +20,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -43,4 +43,16 @@ input[type="radio"].visually-hidden {
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1200px;
+  }
 }

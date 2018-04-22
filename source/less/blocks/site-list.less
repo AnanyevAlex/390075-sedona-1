@@ -4,6 +4,7 @@
   list-style: none;
   font-size: 18px;
   font-family: @sedona-title-font;
+  background-color: #ffffff;
 }
 
 .site-list__item {
@@ -19,4 +20,19 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    background-color: #ffffff;
+  }
+
+  .site-list__item {
+    background-color: #ffffff;
+  }
+
+  .site-list__link {
+    color: #000000;
+  }
 }

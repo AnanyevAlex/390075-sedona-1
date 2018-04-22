@@ -1,6 +1,7 @@
 .page-footer {
   min-height: 230px;
   padding: 35px 85px 0 85px;
+  background-color: #ffffff;
 }
 
 .page-footer__hashteg {
@@ -9,4 +10,25 @@
   text-align: center;
   font-family: @sedona-title-font;
   text-transform: uppercase;
+}
+
+.page-footer__copyright {
+  margin: 0;
+  font-size: @sedona-regular-size;
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    min-height: 120px;
+  }
+
+  .page-footer__hashteg {
+    margin: 0;
+  }
 }

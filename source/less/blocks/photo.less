@@ -1,6 +1,7 @@
 .photo {
   padding: 24px 0 0 20px;
   min-height: 391px;
+  min-width: 320;
 }
 
 .photo__title {
@@ -21,4 +22,51 @@
 .photo__author {
   color: #333333;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    padding: 0;
+    background-color: #d69f66;
+    min-height: 350px;
+
+    &--main {
+      width: 648px;
+    }
+
+    &--another {
+      width: 324px;
+    }
+  }
+
+  .photo__img-block {
+    height: 267px;
+
+    &--main {
+      height: 400px;
+    }
+  }
+
+  .photo__text-block {
+    display: flex;
+    height: 80px;
+  }
+
+  .photo__block-name {
+    flex-grow: 1;
+  }
+
+  .photo__likes {
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo--main {
+    width: 1200px;
+  }
+
+  .photo--another {
+    width: 400px;
+  }
 }
