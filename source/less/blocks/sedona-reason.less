@@ -33,13 +33,14 @@
   }
 
   &--text-block-one {
+    min-height: 152px;
     padding: 0 15px;
-    margin-bottom: 38px;
+
   }
 
   &--text-block-two {
+    min-height: 152px;
     padding: 0 15px;
-    margin-bottom: 38px;
   }
 
   &--featerus {
@@ -53,7 +54,7 @@
 }
 
 .sedona-reason__photo-reason-one {
-  width: 320px;
+  width: 100%;
   height: 260px;
   background-image: url("../img/main-city-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -61,7 +62,7 @@
 }
 
 .sedona-reason__photo-reason-two {
-  width: 320px;
+  width: 100%;
   height: 260px;
   background-image: url("../img/photo-bridge-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -95,6 +96,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #eeeeee;
 }
 
 .senoda-reason__bg {
@@ -126,6 +128,7 @@
     &--text-block-one {
       box-sizing: border-box;
       margin: 0;
+      padding: 45px 43px 0 43px;
       width: 33.3%;
     }
 
@@ -133,8 +136,18 @@
       box-sizing: border-box;
       order: 2;
       margin: 0;
+      padding: 45px 43px 0 43px;
       width: 33.3%;
     }
+  }
+
+  .sedona-reason__reason-title {
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+
+  .sedon-reason__reason-number {
+    margin-bottom: 15px;
   }
 
   .sedona-reason__photo-reason-one {
@@ -149,5 +162,32 @@
 
   .sedona-reason__mini-block {
     display: flex;
+  }
+
+  .senoda-reason__bg {
+    padding: 43px 48px 0 48px;
+    width: 33.3%;
+
+    &--second-block {
+      padding: 43px 55px 0 55px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sedona-reason__item--text-block-one {
+    padding: 52px 60px 0 60px;
+  }
+
+  .sedona-reason__item--text-block-two {
+    padding: 52px 82px 0 82px;
+  }
+
+  .sedona-reason__reason-title {
+    margin: 0 42px 10px 42px;
+  }
+
+  .senoda-reason__bg .sedona-reason__reason-title {
+    margin: 0 72px 10px 72px;
   }
 }

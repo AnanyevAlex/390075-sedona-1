@@ -5,6 +5,11 @@
   min-height: 200px;
   padding: 39px 30px 0 30px;
   background-color: #ffffff;
+
+  &--second-page {
+    padding: 35px 23px 0 22px;
+    min-height: 185px;
+  }
 }
 
 .sedona-intro__title {
@@ -21,16 +26,41 @@
   text-align: center;
   font-size: @sedona-regular-size;
   text-transform: uppercase;
-  line-height: 24px;
-}
+  line-height: 26px;
 
-.sedona-intro__second-page {
-  padding: 35px 23px 0 23px;
-  min-height: 185px;
+  &--second-page {
+    line-height: 24px;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .sedona-intro__second-page {
-    height: 250px;
+  .sedona-intro {
+    padding: 50px 74px 0 74px;
+    min-height: 205px;
+
+    &--second-page {
+      height: 250px;
+      padding: 75px 165px 0 165px;
+    }
+}
+
+  .sedona-intro__title {
+    font-size: 21px;
+
+    &--second-page {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sedona-intro {
+    padding: 50px 290px 0 290px;
+    min-height: 290px;
+
+    &--second-page {
+      padding: 113px 380px 0 380px;
+    }
   }
 }

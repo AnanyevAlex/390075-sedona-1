@@ -28,50 +28,55 @@
           <div class="main-img__decore"></div>
         </div>
         <section class="sedona-feedback">
-          <div class="sedona-intro sedona-intro__second-page">
-            <h1 class="sedona-intro__title">Оставьте свой отзыв</h1>
-            <p class="sedona-intro__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <div class="sedona-intro sedona-intro--second-page">
+            <h1 class="sedona-intro__title sedona-intro__title--second-page">Оставьте свой отзыв</h1>
+            <p class="sedona-intro__intro sedona-intro__intro--second-page">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="sedona-feedback__form info-form" action="https://echo.htmlacademy.ru" method="post">
-
-            <fieldset class="info-form__fieldset">
-              <legend class="info-form__legend">Представьтесь:</legend>
-              <label class="info-form__label info-form__label--name" for="firstname">Имя*:</label>
-              <input class="info-form__input" type="text" id="firstname" name="user-name" value="Петр">
-              <label class="info-form__label info-form__label--name" for="lastname" >Фамилия*:</label>
-              <input class="info-form__input" type="text" id="lastname" name="user-name" value="Иванов">
-              <label class="info-form__label info-form__label--name" for="middlename">Отчество:</label>
-              <input class="info-form__input" type="text" id="middlename" name="user-name" value="Александрович">
+            <fieldset class="info-form__fieldset info-form__fieldset--name">
+              <p class="info-form__legend">Представьтесь:</p>
+              <div class="info-form__item">
+                <label class="info-form__label info-form__label--name" for="firstname">Имя*:</label>
+                <input class="info-form__input" type="text" id="firstname" name="user-name" value="Петр">
+              </div>
+              <div class="info-form__item">
+                <label class="info-form__label info-form__label--name" for="lastname" >Фамилия*:</label>
+                <input class="info-form__input" type="text" id="lastname" name="user-name" value="Иванов">
+              </div>
+              <div class="info-form__item">
+                <label class="info-form__label info-form__label--name" for="middlename">Отчество:</label>
+                <input class="info-form__input" type="text" id="middlename" name="user-name" value="Александрович">
+              </div>
             </fieldset>
-            <fieldset class="info-form__fieldset info-form__fieldset--fullwidth">
-              <legend class="info-form__legend">Контактная информация:</legend>
-              <label class="info-form__label" for="user-phone">Контактный телефон*:</label>
-              <input class="info-form__input" type="tel" id="user-phone" name="user-contacts" value="Введите телефон">
-              <label class="info-form__label" for="user-email">Электронная почта*:</label>
-              <input class="info-form__input" type="email" id="user-email" name="user-contacts" value="Введите e-mail">
+            <fieldset class="info-form__fieldset info-form__fieldset--fullwidth info-form__fieldset--contacts">
+              <p class="info-form__legend info-form__legend--contacts">Контактная информация:</p>
+              <label class="info-form__label info-form__label--contacts" for="user-phone">Контактный телефон*:</label>
+              <input class="info-form__input info-form__input--contacts" type="tel" id="user-phone" name="user-contacts" value="Введите телефон">
+              <label class="info-form__label info-form__label--contacts" for="user-email">Электронная почта*:</label>
+              <input class="info-form__input info-form__input--contacts" type="email" id="user-email" name="user-contacts" value="Введите e-mail">
             </fieldset>
-            <fieldset class="info-form__fieldset info-form__fieldset--order">
-              <legend class="info-form__legend">Ваше общее впечатление:</legend>
-              <label class="info-form__label info-form__input-radio" for="positively">Скорее положительное</label>
+            <fieldset class="info-form__fieldset info-form__fieldset--impression">
+              <p class="info-form__legend info-form__legend--impression">Ваше общее впечатление:</p>
+              <label class="info-form__label info-form__label--impression" for="positively">Скорее положительное</label>
               <input class="info-form__input visually-hidden" type="radio" name="impression" id="positively">
-              <label class="info-form__label info-form__input-radio" for="negatively">Скорее отрицательное</label>
+              <label class="info-form__label info-form__label--impression" for="negatively">Скорее отрицательное</label>
               <input class="info-form__input visually-hidden" type="radio" name="impression" id="negatively">
-              <label class="info-form__label info-form__input-radio" for="complicate">Затрудняюсь ответить</label>
+              <label class="info-form__label info-form__label--impression" for="complicate">Затрудняюсь ответить</label>
               <input class="info-form__input visually-hidden" type="radio" name="impression" id="complicate">
             </fieldset>
-            <fieldset class="info-form__fieldset info-form__fieldset--fullwidth">
-              <legend class="info-form__legend">Посещенные достопримечательности:</legend>
-              <label class="info-form__label info-form__input-checkbox" for="bridge">Мост Дьявола</label>
-              <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="bridge">
-              <label class="info-form__label info-form__input-checkbox" for="mountain">Гора-Колокол</label>
-              <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="mountain">
-              <label class="info-form__label info-form__input-checkbox" for="park">Слайд-парк</label>
-              <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="park">
-              <label class="info-form__label info-form__input-checkbox" for="rock">Красные скалы</label>
-              <input class="info-form__input visually-hidden" type="checkbox" name="landmark" id="rock">
+            <fieldset class="info-form__fieldset info-form__fieldset--place">
+              <p class="info-form__legend info-form__legend--place">Посещенные достопримечательности:</p>
+                <label class="info-form__label info-form__label--place" for="bridge">Мост Дьявола</label>
+                <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="bridge">
+                <label class="info-form__label info-form__label--place" for="mountain">Гора-Колокол</label>
+                <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="mountain">
+                <label class="info-form__label info-form__label--place" for="park">Слайд-парк</label>
+                <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="park">
+                <label class="info-form__label info-form__label--place" for="rock">Красные скалы</label>
+                <input class="info-form__input visually-hidden" type="checkbox" name="landmark" id="rock">
             </fieldset>
             <fieldset class="info-form__fieldset info-form__fieldset--fullwidth">
-              <legend class="info-form__legend">Опишите свои эмоции:</legend>
+              <p class="info-form__legend">Опишите свои эмоции:</p>
               <textarea class="info-form__text" rows="10" cols="45" name="comment" value="">Опишите подробно все свои восторги</textarea>
             </fieldset>
             <div class="info-form__btn">
@@ -93,10 +98,12 @@
             <a class="social-block__button" href="#"><span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
-        <p class="page-footer__copyright">
-          <span class="page-footer__copyright-text">Разработано</span>
-          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">html академия</span></a>
-        </p>
+        <div class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <span class="visually-hidden">html академия</span>
+            <span class="page-footer__copyright-text">Разработано</span>
+          </a>
+        </div>
       </footer>
     </div>
   </body>

@@ -1,6 +1,8 @@
 .main-nav {
   position: relative;
+  min-width: 320px;
   min-height: 280px;
+  background-color: #ffffff;
 }
 
 .main-nav__toggle {
@@ -13,12 +15,23 @@
   background-color: @sedona-main-color;
 }
 
+@media (max-width: @mobile-width-only) {
+  max-width: 760px;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
     min-height: 55px;
+    width: 768px;
   }
 
   .main-nav__toggle {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 1200px;
   }
 }

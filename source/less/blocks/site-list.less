@@ -1,20 +1,20 @@
 .site-list {
   margin: 0;
   padding: 0;
+  width: 100%;
   list-style: none;
   font-size: 18px;
   font-family: @sedona-title-font;
-  background-color: #ffffff;
+  background-color: @sedona-main-color;
 }
 
 .site-list__item {
   height: 55px;
-  background-color: @sedona-main-color;
+  text-align: center;
 }
 
 .site-list__link {
   display: block;
-  text-align: center;
   padding-top: 16px;
   font-size: @sedona-title-size;
   color: #ffffff;
@@ -24,15 +24,46 @@
 
 @media (min-width: @tablet-width) {
   .site-list {
+    box-sizing: border-box;
     display: flex;
+    padding-left: 10px;
     background-color: #ffffff;
   }
 
   .site-list__item {
-    background-color: #ffffff;
+    width: 135px;
+    margin-right: 20px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 155px;
+    margin-right: 15px;
+  }
+
+  .site-list__item:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .site-list__link {
+    font-size: 14px;
   }
 
   .site-list__link {
     color: #000000;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    padding-left: 52px;
+  }
+
+  .site-list__item {
+    margin-right: 104px;
+  }
+
+  .site-list__item:nth-child(3) {
+  margin-left: 245px;
+  margin-right: 104px;
   }
 }

@@ -1,34 +1,68 @@
 .info-form {
-  margin-top: 34px;
-  padding: 0 20px;
+  margin: 0;
+  padding: 15px 20px 37px 20px;
   background-color: #ffffff;
 }
 
 .info-form__fieldset {
+  box-sizing: border-box;
   border: none;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 20px 0 0 0;
   outline: 1px solid green;
   font-size: @sedona-title-size;
   font-family: @sedona-title-font;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
+
+  &--contacts {
+    padding: 26px 0 15px 0;
+  }
+
+  &--impression {
+    padding: 20px 0 20px 0;
+  }
+
+  &--place {
+    padding: 20px 0 0 0;
+  }
 }
 
 .info-form__legend {
-  margin-bottom: 15px;
+  margin: 0 0 20px 0;
+
+  &--place {
+    margin: 0 0 15px 0;
+  }
+}
+
+.info-form__item {
+  display: flex;
+  text-align: left;
+  min-height: 58px;
+  margin-bottom: 20px;
 }
 
 .info-form__input {
+  box-sizing: border-box;
   border: none;
-  text-align: center;
+  width: 100%;
+  height: 58px;
+  flex-grow: 1;
+  text-align: left;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 22px;
+  background-color: #f2f2f2;
   font: inherit;
   font-size: @sedona-title-size;
   font-family: @sedona-title-font;
   color: rgba(0, 0, 0, 1);
+
+  &--contacts {
+    margin-bottom: 15px;
+    padding-right: 60px;
+  }
 }
 
 .info-form__text {
@@ -38,7 +72,7 @@
   width: 100%;
   text-align: left;
   margin: 0 0 45px 0;
-  padding: 20px;
+  padding: 15px 0 0 20px;
   font: inherit;
   font-size: @sedona-title-size;
   font-family: @sedona-title-font;
@@ -47,12 +81,39 @@
 }
 
 .info-form__label {
+  display: block;
   text-transform: none;
 
   &--name {
     font-family: "ptsans", "arial", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
+    padding: 18px 13px 0 0;
+  }
+
+  &--contacts {
+    font-family: "ptsans", "arial", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0 0 0 22px;
+    margin-bottom: 5px;
+  }
+
+  &--impression {
+    box-sizing: border-box;
+    height: 58px;
+    padding: 15px 0 0 57px;
+    margin-bottom: 10px;
+  }
+
+  &--place {
+    box-sizing: border-box;
+    text-align: left;
+    height: 58px;
+    padding: 15px 0 0 78px;
+    margin-bottom: 22px;
   }
 }
 
@@ -60,13 +121,10 @@
   padding-left: 62px;
 }
 
-.info-form__input-radio {
-  padding-left: 62px;
-}
-
 .info-form__button {
+  display: block;
   border: none;
-  margin-bottom: 37px;
+  margin: 0 auto;
   text-align: center;
   width: 280px;
   height: 58px;
@@ -82,21 +140,80 @@
   .info-form {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 60px;
+    padding: 5px 60px 0 60px;
     margin: 0;
+  }
+
+  .info-form__item:nth-child(4) {
+    margin-bottom: 0;
   }
 
   .info-form__fieldset {
     flex-shrink: 0;
     width: 324px;
+    padding: 0 0 0 0;
 
-    &--fullwidth {
+    &--name {
+      padding: 0 0 0 56px;
+    }
+
+    &--place {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 0;
+      flex-shrink: 1;
       width: 648px;
+      padding: 30px 0 0 0;
     }
 
-    &--order {
-      order: -1;
+    &--contacts {
+      width: 100%;
+      padding: 70px 0 0 0;
     }
+
+    &--impression {
+      order: -1;
+      padding: 0 0 0 0;
+    }
+  }
+
+  .info-form__legend {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 57px;
+
+    &--contacts {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    &--place {
+      text-align: center;
+      margin: 0 120px 0 120px;
+    }
+  }
+
+  .info-form__label {
+    text-align: left;
+
+    &--impression {
+      padding-left: 75px;
+      margin-bottom: 20px;
+    }
+
+    &--impression:nth-child(6) {
+      margin-bottom: 0;
+    }
+
+    &--place {
+      width: 200px;
+      padding: 0;
+    }
+  }
+
+  .info-form__input--contacts {
+    margin-bottom: 24px;
   }
 
   .info-form__btn {
@@ -113,7 +230,7 @@
   .info-form__fieldset {
     width: 480px;
 
-    &--fullwidth {
+    &--place {
       width: 960px;
     }
   }

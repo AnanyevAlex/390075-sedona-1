@@ -40,10 +40,26 @@ input[type="radio"].visually-hidden {
 
 .container {
   position: relative;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
 }
+
+.desktop-width {
+    display: none;
+  }
+
+
+@media (max-width: @mobile-width-only) {
+  .container {
+    max-width: 767px;
+  }
+
+  .tablet-width {
+    display: none;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .container {
@@ -54,5 +70,9 @@ input[type="radio"].visually-hidden {
 @media (min-width: @desktop-width) {
   .container {
     width: 1200px;
+  }
+
+  .desktop-width {
+    display: block;
   }
 }
