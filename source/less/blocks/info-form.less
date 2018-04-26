@@ -157,14 +157,18 @@
     margin-bottom: 0;
   }
 
-  .info-form__item--place {
-    height: 50px;
-    outline: 1px solid green;
-    margin-bottom: 31px;
+  .info-form__item {
+    &--place {
+      height: 50px;
+      outline: 1px solid green;
+      margin-bottom: 31px;
+    }
   }
 
-  .info-form__item--contacts {
-    margin-bottom: 0;
+  .info-form__item {
+    &--contacts {
+      margin-bottom: 0;
+    }
   }
 
   .info-form__fieldset {
@@ -243,8 +247,10 @@
     }
   }
 
-  .info-form__input--contacts {
-    margin-bottom: 24px;
+  .info-form__input {}
+    &--contacts {
+      margin-bottom: 24px;
+    }
   }
 
   .info-form__btn {
@@ -278,13 +284,15 @@
     padding: 0 120px;
   }
 
-  .info-form__item--contacts {
-    display: flex;
-    width: 480px;
-  }
+  .info-form__item {
+    &--contacts {
+      display: flex;
+      width: 480px;
+    }
 
-  .info-form__item--place {
-    width: 205px;
+    &--place {
+      width: 205px;
+    }
   }
 
   .info-form__fieldset {
@@ -317,20 +325,22 @@
     padding: 0;
   }
 
-  .info-form__legend--impression {
+  .info-form__legend {
+    &--impression {
     margin: 0 0 58px 80px;
-  }
+    }
 
-  .info-form__legend--place {
-    margin: 0 320px 40px 320px;
-  }
+    &--place {
+      margin: 0 320px 40px 320px;
+    }
 
-  .info-form__legend--contacts {
-    margin-bottom: 73px;
-  }
+    &--contacts {
+      margin-bottom: 73px;
+    }
 
-  .info-form__legend--comment {
-    margin: 0 350px 59px 353px;
+    &--comment {
+      margin: 0 350px 59px 353px;
+    }
   }
 
   .info-form__label {
@@ -341,16 +351,18 @@
     &--contacts {
       padding: 18px 17px 0 0;
     }
+
+    &--place {
+      text-align: center;
+      padding: 15px 0 0 77px;
+    }
   }
 
-  .info-form__label--place {
-    text-align: center;
-    padding: 15px 0 0 77px;
-  }
-
-  .info-form__input--contacts {
-    flex-grow: 0;
-    width: 316px;
+  .info-form__input {
+    &--contacts {
+      flex-grow: 0;
+      width: 316px;
+    }
   }
 
   .info-form__btn {
