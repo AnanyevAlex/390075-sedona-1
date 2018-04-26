@@ -28,7 +28,7 @@
           <div class="main-img__decore"></div>
         </div>
         <section class="sedona-feedback">
-          <div class="sedona-intro sedona-intro--second-page">
+          <div class="sedona-intro sedona-intro--second-page sedona-intro--feedback">
             <h1 class="sedona-intro__title sedona-intro__title--second-page">Оставьте свой отзыв</h1>
             <p class="sedona-intro__intro sedona-intro__intro--second-page">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
@@ -50,10 +50,16 @@
             </fieldset>
             <fieldset class="info-form__fieldset info-form__fieldset--fullwidth info-form__fieldset--contacts">
               <p class="info-form__legend info-form__legend--contacts">Контактная информация:</p>
-              <label class="info-form__label info-form__label--contacts" for="user-phone">Контактный телефон*:</label>
-              <input class="info-form__input info-form__input--contacts" type="tel" id="user-phone" name="user-contacts" value="Введите телефон">
-              <label class="info-form__label info-form__label--contacts" for="user-email">Электронная почта*:</label>
-              <input class="info-form__input info-form__input--contacts" type="email" id="user-email" name="user-contacts" value="Введите e-mail">
+              <div class="info-form__flexbox-contacts">
+                <div class="info-form__item info-form__item--contacts">
+                  <label class="info-form__label info-form__label--contacts" for="user-phone"> <span class="no-desktop">Контактный</span>  телефон*:</label>
+                  <input class="info-form__input info-form__input--contacts" type="tel" id="user-phone" name="user-contacts" value="Введите телефон">
+                </div>
+                <div class="info-form__item info-form__item--contacts">
+                  <label class="info-form__label info-form__label--contacts" for="user-email">Электронная почта*:</label>
+                  <input class="info-form__input info-form__input--contacts" type="email" id="user-email" name="user-contacts" value="Введите e-mail">
+                </div>
+              </div>
             </fieldset>
             <fieldset class="info-form__fieldset info-form__fieldset--impression">
               <p class="info-form__legend info-form__legend--impression">Ваше общее впечатление:</p>
@@ -66,21 +72,32 @@
             </fieldset>
             <fieldset class="info-form__fieldset info-form__fieldset--place">
               <p class="info-form__legend info-form__legend--place">Посещенные достопримечательности:</p>
-                <label class="info-form__label info-form__label--place" for="bridge">Мост Дьявола</label>
-                <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="bridge">
-                <label class="info-form__label info-form__label--place" for="mountain">Гора-Колокол</label>
-                <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="mountain">
-                <label class="info-form__label info-form__label--place" for="park">Слайд-парк</label>
-                <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="park">
-                <label class="info-form__label info-form__label--place" for="rock">Красные скалы</label>
-                <input class="info-form__input visually-hidden" type="checkbox" name="landmark" id="rock">
+              <div class="info-form__flexbox-place">
+                <div class="info-form__item info-form__item--place">
+                  <label class="info-form__label info-form__label--place" for="bridge">Мост Дьявола</label>
+                  <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="bridge">
+                </div>
+                <div class="info-form__item info-form__item--place">
+                  <label class="info-form__label info-form__label--place" for="mountain">Гора-Колокол</label>
+                  <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="mountain">
+                </div>
+                <div class="info-form__item info-form__item--place">
+                  <label class="info-form__label info-form__label--place" for="park">Слайд-парк</label>
+                  <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="park">
+                </div>
+                <div class="info-form__item info-form__item--place">
+                  <label class="info-form__label info-form__label--place" for="rock">Красные скалы</label>
+                  <input class="info-form__input visually-hidden" type="checkbox" name="landmark" id="rock">
+                </div>
+              </div>
             </fieldset>
-            <fieldset class="info-form__fieldset info-form__fieldset--fullwidth">
-              <p class="info-form__legend">Опишите свои эмоции:</p>
+            <fieldset class="info-form__fieldset info-form__fieldset--comment">
+              <p class="info-form__legend info-form__legend--comment">Опишите свои эмоции:</p>
               <textarea class="info-form__text" rows="10" cols="45" name="comment" value="">Опишите подробно все свои восторги</textarea>
             </fieldset>
             <div class="info-form__btn">
               <button class="info-form__button" type="submit" name="send-comment">Отправить отзыв</button>
+              <p class="info-form__require">* &#8211; Обязательные поля</p>
             </div>
           </form>
         </section>
