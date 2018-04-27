@@ -17,15 +17,17 @@
             <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">html academy</a></li>
           </ul>
           <a class="page-header__logo-link" href="#">
-            <include src="img/logo-sedona-mobile.svg"></include>
+            <img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="100" height="85" alt="логотип Седоны">
           </a>
           <button class="main-nav__toggle"  type="button"><span class="visually-hidden">Открыть меню</span></button>
         </nav>
       </header>
       <main class="page-main">
         <div class="main-img main-img--min-img">
-          <div class="main-img__text-index"></div>
-          <div class="main-img__decore"></div>
+          <p class="visually-hidden">Главная фото Седоны</p>
+          <div class="main-img__text-index">
+            <p class="visually-hidden">Добро пожаловать в Седону</p>
+          </div>
         </div>
         <section class="sedona-feedback">
           <div class="sedona-intro sedona-intro--second-page sedona-intro--feedback">
@@ -93,7 +95,7 @@
             </fieldset>
             <fieldset class="info-form__fieldset info-form__fieldset--comment">
               <p class="info-form__legend info-form__legend--comment">Опишите свои эмоции:</p>
-              <textarea class="info-form__text" rows="10" cols="45" name="comment" value="">Опишите подробно все свои восторги</textarea>
+              <textarea class="info-form__text" rows="10" cols="45" name="comment" value="" placeholder="">Опишите подробно все свои восторги</textarea>
             </fieldset>
             <div class="info-form__btn">
               <button class="info-form__button" type="submit" name="send-comment">Отправить отзыв</button>
