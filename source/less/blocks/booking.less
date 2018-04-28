@@ -1,10 +1,11 @@
 .booking {
   box-sizing: border-box;
-  padding: 30px 20px 40px 20px;
+  padding: 30px 20px 50px 20px;
+  background-color: #ffffff;
 }
 
 .booking__title {
-  margin: 0 0 18px 0;
+  margin: 0 0 19px 0;
   text-align: center;
   font-size: 21px;
   font-family: @sedona-title-font;
@@ -12,11 +13,15 @@
 }
 
 .booking__intro {
-  margin: 0 0 35px 0;
+  margin: 0 auto 35px auto;
   line-height: 24px;
   text-align: center;
   font-size: @sedona-regular-size;
   text-transform: uppercase;
+}
+
+.booking__text {
+  margin: 0;
 }
 
 .booking__button {
@@ -39,15 +44,33 @@
 
 @media (min-width: @tablet-width) {
   .booking {
-    min-height: 330px;
+    min-height: 318px;
+    padding: 50px 20px 50px 20px;
   }
 
   .booking__title {
     font-size: 30px;
     line-height: 36px;
+    margin-bottom: 27px;
+  }
+
+  .booking__intro {
+    width: 445px;
+    margin: 0 auto 41px auto;
   }
 
   .booking__button {
     margin: 0 auto;
+    width: 460px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .booking {
+    padding: 50px 20px 68px 20px;
+  }
+
+  .booking__intro {
+    margin-bottom: 45px;
   }
 }

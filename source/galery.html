@@ -10,6 +10,7 @@
     <div class="container">
       <header class="page-header">
         <nav class="main-nav">
+          <button class="main-nav__close"  type="button"><span class="visually-hidden">Закрыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
             <li class="site-list__item"><a class="site-list__link">фото и видео</a></li>
@@ -17,20 +18,22 @@
             <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">html academy</a></li>
           </ul>
           <a class="page-header__logo-link" href="#">
-          <include src="img/logo-sedona-mobile.svg"></include>
+            <img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="100" height="85" alt="логотип Седоны">
           </a>
           <button class="main-nav__toggle"  type="button"><span class="visually-hidden">Открыть меню</span></button>
         </nav>
       </header>
       <main class="page-main">
         <div class="main-img main-img--min-img">
-          <div class="main-img__text-index"></div>
-          <div class="main-img__decore"></div>
+          <p class="visually-hidden">Главная фото Седоны</p>
+          <div class="main-img__text-index main-img__text-index--min-text">
+            <p class="visually-hidden">Добро пожаловать в Седону</p>
+          </div>
         </div>
         <section class="sedona-galery">
-          <div class="sedona-intro sedona-intro__second-page">
-            <h1 class="sedona-intro__title">Фото и видео</h1>
-            <p class="sedona-intro__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <div class="sedona-intro sedona-intro--second-page">
+            <h1 class="sedona-intro__title sedona-intro__title--second-page">Фото и видео</h1>
+            <p class="sedona-intro__intro sedona-intro__intro--second-page">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
           <ul class="sedona-galery__list">
             <li class="sedona-galery__item photo photo--main">
@@ -132,10 +135,12 @@
             <a class="social-block__button" href="#"><span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
-        <p class="page-footer__copyright">
-          <span class="page-footer__copyright-text">Разработано</span>
-          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">html академия</span></a>
-        </p>
+        <div class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <span class="visually-hidden">html академия</span>
+            <span class="page-footer__copyright-text">Разработано</span>
+          </a>
+        </div>
       </footer>
     </div>
   </body>

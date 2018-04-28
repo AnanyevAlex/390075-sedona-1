@@ -10,6 +10,7 @@
     <div class="container">
       <header class="page-header">
         <nav class="main-nav">
+          <button class="main-nav__close"  type="button"><span class="visually-hidden">Закрыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a class="site-list__link">Главная</a></li>
             <li class="site-list__item"><a class="site-list__link" href="galery.html">фото и видео</a></li>
@@ -17,15 +18,15 @@
             <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">html academy</a></li>
           </ul>
           <a class="page-header__logo-link" href="#">
-            <include src="img/logo-sedona-mobile.svg"></include>
+            <img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="100" height="85" alt="логотип Седоны">
           </a>
           <button class="main-nav__toggle"  type="button"><span class="visually-hidden">Открыть меню</span></button>
         </nav>
       </header>
       <main class="page-main">
         <div class="main-img">
-          <div class="main-img__text-index"></div>
-          <div class="main-img__decore"></div>
+          <p class="visually-hidden">Главная фото Седоны</p>
+          <div class="main-img__text-index"><p class="visually-hidden">Добро пожаловать в Седону</p></div>
         </div>
         <section class="sedona-reason">
           <div class="sedona-intro">
@@ -35,7 +36,7 @@
           <ul class="sedona-reason__list">
             <li class="sedona-reason__item sedona-reason__item--image sedona-reason__item--image-decore">
               <div class="sedona-reason__item--text-block-one">
-                <h3 class="sedona-reason__reason-title">Настоящий городок</h3>
+                <h3 class="sedona-reason__reason-title">Настоящий <br class="desktop-width"> городок</h3>
                 <p class="sedon-reason__reason-number">№1</p>
                 <p class="sedon-reason__reason-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
@@ -49,7 +50,7 @@
                 </li>
                 <li class="sedona-feature__item sedona-feature__item--souvenirs">
                   <h3 class="sedona-feature__title">Сувениры</h3>
-                  <p class="sedon-feature__description">Не только китайского, но и местного производства!</p>
+                  <p class="sedon-feature__description">Не только китайского, <br class="desktop-width"> но и местного производства!</p>
                 </li>
                 <li class="sedona-feature__item sedona-feature__item--food">
                   <h3 class="sedona-feature__title">Еда</h3>
@@ -58,7 +59,7 @@
               </ul>
               <li class="sedona-reason__item sedona-reason__item--image">
                 <div class="sedona-reason__item--text-block-two">
-                  <h3 class="sedona-reason__reason-title">Там есть мост дьявола</h3>
+                  <h3 class="sedona-reason__reason-title">Там есть <br class="tablet-width"> мост дьявола</h3>
                   <p class="sedon-reason__reason-number">№2</p>
                   <p class="sedon-reason__reason-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
@@ -71,7 +72,7 @@
                     <p class="sedon-reason__reason-number">№3</p>
                     <p class="sedon-reason__reason-description">Все интересные места находятся очень близко</p>
                   </li>
-                  <li class="sedona-reason__item senoda-reason__bg">
+                  <li class="sedona-reason__item senoda-reason__bg senoda-reason__bg--second-block">
                     <h3 class="sedona-reason__reason-title">Красивая дорога</h3>
                     <p class="sedon-reason__reason-number">№4</p>
                     <p class="sedon-reason__reason-description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
@@ -88,7 +89,9 @@
         <section class="booking">
           <h2 class="visually-hidden">Забронировать дату поездки</h2>
           <h3 class="booking__title">Заинтересовались?</h3>
-          <p class="booking__intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="booking__intro">
+            <p class="booking__text">Укажите предполагаемые даты поездки, <br class="tablet-width"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          </div>
           <div class="booking__button">
             <a class="booking__button--find" href="booking-form.html">Найти гостиницу</a>
           </div>
@@ -98,7 +101,9 @@
         </section>
       </main>
       <footer class="page-footer">
-        <p class="page-footer__hashteg">#Visitsedona</p>
+        <div class="page-footer__hashteg">
+          <p class="page-footer__hashteg--text">#Visitsedona</p>
+        </div>
         <ul class="social-block">
           <li class="social-block__item">
             <a class="social-block__button" href="#"><span class="visually-hidden">Twitter</span></a>
@@ -111,8 +116,10 @@
           </li>
         </ul>
         <div class="page-footer__copyright">
-          <span class="page-footer__copyright-text">Разработано</span>
-          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">html академия</span></a>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <span class="visually-hidden">html академия</span>
+            <span class="page-footer__copyright-text">Разработано</span>
+          </a>
         </div>
       </footer>
     </div>

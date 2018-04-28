@@ -10,6 +10,7 @@
     <div class="container">
       <header class="page-header">
         <nav class="main-nav">
+          <button class="main-nav__close"  type="button"><span class="visually-hidden">Закрыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
             <li class="site-list__item"><a class="site-list__link" href="galery.html">фото и видео</a></li>
@@ -17,65 +18,89 @@
             <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">html academy</a></li>
           </ul>
           <a class="page-header__logo-link" href="#">
-            <include src="img/logo-sedona-mobile.svg"></include>
+            <img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="100" height="85" alt="логотип Седоны">
           </a>
           <button class="main-nav__toggle"  type="button"><span class="visually-hidden">Открыть меню</span></button>
         </nav>
       </header>
       <main class="page-main">
         <div class="main-img main-img--min-img">
-          <div class="main-img__text-index"></div>
-          <div class="main-img__decore"></div>
+          <p class="visually-hidden">Главная фото Седоны</p>
+          <div class="main-img__text-index">
+            <p class="visually-hidden">Добро пожаловать в Седону</p>
+          </div>
         </div>
         <section class="sedona-feedback">
-          <div class="sedona-intro sedona-intro__second-page">
-            <h1 class="sedona-intro__title">Оставьте свой отзыв</h1>
-            <p class="sedona-intro__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <div class="sedona-intro sedona-intro--second-page sedona-intro--feedback">
+            <h1 class="sedona-intro__title sedona-intro__title--second-page">Оставьте свой отзыв</h1>
+            <p class="sedona-intro__intro sedona-intro__intro--second-page">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="sedona-feedback__form info-form" action="https://echo.htmlacademy.ru" method="post">
-
-            <fieldset class="info-form__fieldset">
-              <legend class="info-form__legend">Представьтесь:</legend>
-              <label class="info-form__label info-form__label--name" for="firstname">Имя*:</label>
-              <input class="info-form__input" type="text" id="firstname" name="user-name" value="Петр">
-              <label class="info-form__label info-form__label--name" for="lastname" >Фамилия*:</label>
-              <input class="info-form__input" type="text" id="lastname" name="user-name" value="Иванов">
-              <label class="info-form__label info-form__label--name" for="middlename">Отчество:</label>
-              <input class="info-form__input" type="text" id="middlename" name="user-name" value="Александрович">
+            <fieldset class="info-form__fieldset info-form__fieldset--name">
+              <p class="info-form__legend">Представьтесь:</p>
+              <div class="info-form__item">
+                <label class="info-form__label info-form__label--name" for="firstname">Имя*:</label>
+                <input class="info-form__input" type="text" id="firstname" name="user-name" value="Петр">
+              </div>
+              <div class="info-form__item">
+                <label class="info-form__label info-form__label--name" for="lastname" >Фамилия*:</label>
+                <input class="info-form__input" type="text" id="lastname" name="user-name" value="Иванов">
+              </div>
+              <div class="info-form__item">
+                <label class="info-form__label info-form__label--name" for="middlename">Отчество:</label>
+                <input class="info-form__input" type="text" id="middlename" name="user-name" value="Александрович">
+              </div>
             </fieldset>
-            <fieldset class="info-form__fieldset info-form__fieldset--fullwidth">
-              <legend class="info-form__legend">Контактная информация:</legend>
-              <label class="info-form__label" for="user-phone">Контактный телефон*:</label>
-              <input class="info-form__input" type="tel" id="user-phone" name="user-contacts" value="Введите телефон">
-              <label class="info-form__label" for="user-email">Электронная почта*:</label>
-              <input class="info-form__input" type="email" id="user-email" name="user-contacts" value="Введите e-mail">
+            <fieldset class="info-form__fieldset info-form__fieldset--fullwidth info-form__fieldset--contacts">
+              <p class="info-form__legend info-form__legend--contacts">Контактная информация:</p>
+              <div class="info-form__flexbox-contacts">
+                <div class="info-form__item info-form__item--contacts">
+                  <label class="info-form__label info-form__label--contacts" for="user-phone"> <span class="no-desktop">Контактный</span>  телефон*:</label>
+                  <input class="info-form__input info-form__input--contacts" type="tel" id="user-phone" name="user-contacts" value="Введите телефон">
+                </div>
+                <div class="info-form__item info-form__item--contacts">
+                  <label class="info-form__label info-form__label--contacts" for="user-email">Электронная почта*:</label>
+                  <input class="info-form__input info-form__input--contacts" type="email" id="user-email" name="user-contacts" value="Введите e-mail">
+                </div>
+              </div>
             </fieldset>
-            <fieldset class="info-form__fieldset info-form__fieldset--order">
-              <legend class="info-form__legend">Ваше общее впечатление:</legend>
-              <label class="info-form__label info-form__input-radio" for="positively">Скорее положительное</label>
+            <fieldset class="info-form__fieldset info-form__fieldset--impression">
+              <p class="info-form__legend info-form__legend--impression">Ваше общее впечатление:</p>
+              <label class="info-form__label info-form__label--impression" for="positively">Скорее положительное</label>
               <input class="info-form__input visually-hidden" type="radio" name="impression" id="positively">
-              <label class="info-form__label info-form__input-radio" for="negatively">Скорее отрицательное</label>
+              <label class="info-form__label info-form__label--impression" for="negatively">Скорее отрицательное</label>
               <input class="info-form__input visually-hidden" type="radio" name="impression" id="negatively">
-              <label class="info-form__label info-form__input-radio" for="complicate">Затрудняюсь ответить</label>
+              <label class="info-form__label info-form__label--impression" for="complicate">Затрудняюсь ответить</label>
               <input class="info-form__input visually-hidden" type="radio" name="impression" id="complicate">
             </fieldset>
-            <fieldset class="info-form__fieldset info-form__fieldset--fullwidth">
-              <legend class="info-form__legend">Посещенные достопримечательности:</legend>
-              <label class="info-form__label info-form__input-checkbox" for="bridge">Мост Дьявола</label>
-              <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="bridge">
-              <label class="info-form__label info-form__input-checkbox" for="mountain">Гора-Колокол</label>
-              <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="mountain">
-              <label class="info-form__label info-form__input-checkbox" for="park">Слайд-парк</label>
-              <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="park">
-              <label class="info-form__label info-form__input-checkbox" for="rock">Красные скалы</label>
-              <input class="info-form__input visually-hidden" type="checkbox" name="landmark" id="rock">
+            <fieldset class="info-form__fieldset info-form__fieldset--place">
+              <p class="info-form__legend info-form__legend--place">Посещенные достопримечательности:</p>
+              <div class="info-form__flexbox-place">
+                <div class="info-form__item info-form__item--place">
+                  <label class="info-form__label info-form__label--place" for="bridge">Мост Дьявола</label>
+                  <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="bridge">
+                </div>
+                <div class="info-form__item info-form__item--place">
+                  <label class="info-form__label info-form__label--place" for="mountain">Гора-Колокол</label>
+                  <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="mountain">
+                </div>
+                <div class="info-form__item info-form__item--place">
+                  <label class="info-form__label info-form__label--place" for="park">Слайд-парк</label>
+                  <input class="info-form__input visually-hidden" type="checkbox" checked name="landmark" id="park">
+                </div>
+                <div class="info-form__item info-form__item--place">
+                  <label class="info-form__label info-form__label--place" for="rock">Красные скалы</label>
+                  <input class="info-form__input visually-hidden" type="checkbox" name="landmark" id="rock">
+                </div>
+              </div>
             </fieldset>
-            <fieldset class="info-form__fieldset info-form__fieldset--fullwidth">
-              <legend class="info-form__legend">Опишите свои эмоции:</legend>
-              <textarea class="info-form__text" rows="10" cols="45" name="comment" value="">Опишите подробно все свои восторги</textarea>
+            <fieldset class="info-form__fieldset info-form__fieldset--comment">
+              <p class="info-form__legend info-form__legend--comment">Опишите свои эмоции:</p>
+              <textarea class="info-form__text" rows="10" cols="45" name="comment" value="" placeholder="">Опишите подробно все свои восторги</textarea>
             </fieldset>
             <div class="info-form__btn">
               <button class="info-form__button" type="submit" name="send-comment">Отправить отзыв</button>
+              <p class="info-form__require">* &#8211; Обязательные поля</p>
             </div>
           </form>
         </section>
@@ -93,11 +118,27 @@
             <a class="social-block__button" href="#"><span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
-        <p class="page-footer__copyright">
-          <span class="page-footer__copyright-text">Разработано</span>
-          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">html академия</span></a>
-        </p>
+        <div class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <span class="visually-hidden">html академия</span>
+            <span class="page-footer__copyright-text">Разработано</span>
+          </a>
+        </div>
       </footer>
+      <div class="failed-message">
+        <p class="visually-hidden">Сообщение об ошибке</p>
+        <p class="failed-message__title">Что то пошло не так!</p>
+        <p class="failed-message__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="failed-message__btn">ок</button>
+      </div>
+      <div class="success-message">
+        <p class="visually-hidden">Сообщение об успехе</p>
+        <p class="success-message__title">Ваш отзыв отправлен!</p>
+        <p class="success-message__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="success-message_btn-block">
+          <button class="success-message__btn">Закрыть окно</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

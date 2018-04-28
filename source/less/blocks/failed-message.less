@@ -1,0 +1,67 @@
+.failed-message {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 720px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-width: 320px;
+  background-color: #ffffff;
+  padding: 10px 50px 35px 50px;
+}
+
+.failed-message__title {
+  font-family: @sedona-title-font;
+  font-size: @sedona-title-size;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.failed-message__text {
+  font-size: @sedona-regular-size;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.failed-message__btn {
+  width: 180px;
+  height: 50px;
+  background-color: @sedona-main-color;
+  border: none;
+  font-size: @sedona-title-size;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .failed-message {
+    bottom: 455px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 400px;
+    height: 355px;
+  }
+
+  .failed-message__title {
+    font-size: 30px;
+    margin: 45px 35px 40px 35px;
+  }
+
+  .failed-message__text {
+    margin-bottom: 60px;
+  }
+
+  .failed-message__btn {
+    width: 275px;
+    height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .failed-message {
+    bottom: 375px;
+  }
+}

@@ -13,19 +13,51 @@
 }
 
 .page-footer__copyright {
-  margin: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+
   font-size: @sedona-regular-size;
   text-transform: uppercase;
   width: 150px;
-  height: 40px;
+  height: 45px;
+}
+
+.page-footer__copyright-link {
+  display: block;
+  padding: 6px 20px 0 10px;
+  height: 35px;
+  color: #000000;
+  text-decoration: none;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
+    padding: 36px 50px 0 50px;
     box-sizing: border-box;
-    justify-content: space-between;
     min-height: 120px;
+  }
+
+  .page-footer__hashteg {
+    box-sizing: border-box;
+    width: 157px;
+    height: 30px;
+    padding-top: 10px;
+
+    &--text {
+      margin: 0;
+    }
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 36px 109px 0 109px;
   }
 
   .page-footer__hashteg {
