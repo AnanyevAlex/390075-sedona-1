@@ -5,6 +5,7 @@
 }
 
 .sedona-feature__item {
+  position: relative;
   padding: 13px 20px 0 70px;
   margin-bottom: 17px;
   min-height: 80px;
@@ -15,10 +16,35 @@
 }
 
 .sedona-feature__title {
+
   margin: 0 0 13px 0;
   font-size: @sedona-title-size;
   font-family: @sedona-title-font;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &--house::before {
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--souvenirs::before {
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--food::before {
+    background-image: url("../img/icon-burger.svg");
+  }
 }
 
 .sedon-feature__description {
@@ -55,5 +81,31 @@
     font-size: 21px;
     margin-bottom: 20px;
     text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 75px;
+      height: 75px;
+      top: 40px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &--house::before {
+      background-image: url("../../img/icon-house.svg");
+    }
+
+    &--souvenirs::before {
+      background-image: url("../../img/icon-gift.svg");
+    }
+
+    &--food::before {
+      background-image: url("../../img/icon-burger.svg");
+    }
   }
 }
