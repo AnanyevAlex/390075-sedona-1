@@ -1,0 +1,150 @@
+.player {
+  position: absolute;
+  width: 280px;
+  height: 110px;
+  bottom: 59px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.player__scale-block {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 19px;
+
+}
+
+.player__scale {
+  position: relative;
+  width: 235px;
+  height: 3px;
+  background-color: #4f413b;
+  margin: 0 auto;
+
+  &--toggle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: -4px;
+    left: 35px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+
+.player__buttom-block {
+  position: relative;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 65px;
+}
+
+.player__btn {
+  position: absolute;
+  cursor: pointer;
+  top: 18px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+
+  &--resume {
+    left: 19px;
+    width: 30px;
+    height: 25px;
+  }
+
+  &--quality {
+    right: 77px;
+    width: 35px;
+    height: 20px;
+  }
+
+  &--fullscreen {
+    right: 22px;
+    width: 28px;
+    height: 24px;
+  }
+
+  &--icon {
+    fill: #5c6870;
+  }
+
+  &:hover &--icon {
+    fill: #363636;
+  }
+
+  &:active &--icon {
+    fill: #b9b9b9;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .player {
+    width: 648px;
+    height: 95px;
+    margin: 0 auto;
+    bottom: 39px;
+
+  }
+
+  .player__buttom-block {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+  }
+
+  .player__scale {
+    &--tablet {
+      position: absolute;
+      width: 390px;
+      height: 3px;
+      background-color: #756960;
+      top: 46px;
+      left: 93px;
+      right: 0;
+    }
+
+    &--toggle {
+      left: 113px;
+    }
+  }
+
+  .player__btn {
+    top: 36px;
+
+    &--resume {
+      left: 28px;
+    }
+
+    &--quality {
+      right: 95px;
+    }
+
+    &--fullscreen {
+      right: 40px;
+    }
+
+    &--icon {
+      fill: #ffffff;
+      opacity: 1;
+    }
+
+    &:hover &--icon {
+      fill: #c2c2c2;
+    }
+
+    &:active &--icon {
+      fill: #949494;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .player {
+    width: 800px;
+    bottom: 85px;
+  }
+}

@@ -1,6 +1,6 @@
 .page-footer {
   min-height: 230px;
-  padding: 35px 85px 0 85px;
+  padding: 15px 85px 0 85px;
   background-color: #ffffff;
 }
 
@@ -14,20 +14,30 @@
 
 .page-footer__copyright {
   box-sizing: border-box;
+  display: flex;
   margin: 0 auto;
-
   font-size: @sedona-regular-size;
   text-transform: uppercase;
   width: 150px;
   height: 45px;
 }
 
+.page-footer__copyright-text {
+  margin: 3px 13px 0 10px;
+}
+
 .page-footer__copyright-link {
   display: block;
-  padding: 6px 20px 0 10px;
-  height: 35px;
-  color: #000000;
-  text-decoration: none;
+  height: 40px;
+  width: 35px;
+
+  &:hover &--icon {
+    fill: #90b2d0;
+  }
+
+  &:active &--icon {
+    fill: #b2b2b2;
+  }
 }
 
 @media (min-width: @tablet-width) {
