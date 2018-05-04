@@ -5,7 +5,6 @@
   list-style: none;
   font-size: 18px;
   font-family: @sedona-title-font;
-  background-color: @sedona-main-color;
 }
 
 .site-list__item {
@@ -14,12 +13,24 @@
 }
 
 .site-list__link {
+  box-sizing: border-box;
   display: block;
+  height: 100%;
   padding-top: 16px;
   font-size: @sedona-title-size;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  background-color: @sedona-main-color;
+
+  &:hover {
+    background-color: #799dbd;
+  }
+
+  &:active {
+    background-color: #6c95ba;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -47,6 +58,30 @@
   .site-list__link {
     font-size: 14px;
     color: #000000;
+    cursor: pointer;
+    background-color: #ffffff;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #90b2d0;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      color: #b2b2b2;
+    }
+
+    &--actived {
+      color: #706358;
+
+      &:hover {
+        color: #675b51;
+      }
+
+      &:active {
+        color: #dad6d3;
+      }
+    }
   }
 }
 
