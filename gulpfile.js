@@ -78,6 +78,16 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("build", function (done) {
+  run(
+    "clean",
+    "copy",
+    "style",
+    "sprite",
+    "html",
+    done);
+});
+
 gulp.task("serve", function() {
   server.init({
     server: "build/",
@@ -88,15 +98,6 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/less/**/*.less", ["style"]);
-  gulp.watch("source/*.html", ["html"]).on("change", server.reload);
+  gulp.watch("source/*.html", ["html"]);
 });
 
-gulp.task("build", function (done) {
-  run(
-    "clean",
-    "copy",
-    "style",
-    "sprite",
-    "html",
-    done);
-});
