@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div style="display: none">
@@ -42,33 +44,37 @@
           </div>
           <ul class="sedona-reason__list">
             <li class="sedona-reason__item sedona-reason__item--image sedona-reason__item--image-decore">
-              <div class="sedona-reason__item--text-block-one">
+              <div class="sedona-reason__text-block sedona-reason__text-block--one">
                 <h3 class="sedona-reason__reason-title">Настоящий <br class="desktop-width"> городок</h3>
-                <p class="sedon-reason__reason-number">№1</p>
-                <p class="sedon-reason__reason-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                <div class=" sedona-reason__reason-number-block">
+                  <p class="sedona-reason__reason-number sedona-reason__reason-number--white">№1</p>
+                </div>
+                <p class="sedona-reason__reason-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="sedona-reason__photo-reason-one"></div>
             </li>
-            <li class="sedona-reason__item sedona-reason__item--featerus">
+            <li class="sedona-reason__item sedona-reason__item--features">
               <ul class="sedona-feature">
                 <li class="sedona-feature__item sedona-feature__item--house">
                   <h3 class="sedona-feature__title sedona-feature__title--house">Жилье</h3>
-                  <p class="sedon-feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <p class="sedona-feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="sedona-feature__item sedona-feature__item--souvenirs">
                   <h3 class="sedona-feature__title sedona-feature__title--souvenirs">Сувениры</h3>
-                  <p class="sedon-feature__description">Не только китайского, <br class="desktop-width"> но и местного производства!</p>
+                  <p class="sedona-feature__description">Не только китайского, <br class="desktop-width"> но и местного производства!</p>
                 </li>
                 <li class="sedona-feature__item sedona-feature__item--food">
                   <h3 class="sedona-feature__title sedona-feature__title--food">Еда</h3>
-                  <p class="sedon-feature__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="sedona-feature__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
               </ul>
               <li class="sedona-reason__item sedona-reason__item--image">
-                <div class="sedona-reason__item--text-block-two">
+                <div class="sedona-reason__text-block sedona-reason__text-block--two">
                   <h3 class="sedona-reason__reason-title">Там есть <br class="tablet-width"> мост дьявола</h3>
-                  <p class="sedon-reason__reason-number">№2</p>
-                  <p class="sedon-reason__reason-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                  <div class="sedona-reason__reason-number-block">
+                    <p class="sedona-reason__reason-number sedona-reason__reason-number--white">№2</p>
+                  </div>
+                  <p class="sedona-reason__reason-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
                 <div class="sedona-reason__photo-reason-two"></div>
               </li>
@@ -76,18 +82,24 @@
                 <ul class="sedona-reason__mini-block">
                   <li class="sedona-reason__item senoda-reason__bg">
                     <h3 class="sedona-reason__reason-title">Небольшая площадь</h3>
-                    <p class="sedon-reason__reason-number">№3</p>
-                    <p class="sedon-reason__reason-description">Все интересные места находятся очень близко</p>
+                    <div class="sedona-reason__reason-number-block">
+                      <p class="sedona-reason__reason-number">№3</p>
+                    </div>
+                    <p class="sedona-reason__reason-description">Все интересные места находятся очень близко</p>
                   </li>
                   <li class="sedona-reason__item senoda-reason__bg senoda-reason__bg--second-block">
                     <h3 class="sedona-reason__reason-title">Красивая дорога</h3>
-                    <p class="sedon-reason__reason-number">№4</p>
-                    <p class="sedon-reason__reason-description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+                    <div class="sedona-reason__reason-number-block">
+                      <p class="sedona-reason__reason-number">№4</p>
+                    </div>
+                    <p class="sedona-reason__reason-description">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
                   </li>
                   <li class="sedona-reason__item senoda-reason__bg">
                     <h3 class="sedona-reason__reason-title">Мало туристов</h3>
-                    <p class="sedon-reason__reason-number">№5</p>
-                    <p class="sedon-reason__reason-description">Большинство едет в гранд каньон и толпится там</p>
+                    <div class="sedona-reason__reason-number-block">
+                      <p class="sedona-reason__reason-number">№5</p>
+                    </div>
+                    <p class="sedona-reason__reason-description">Большинство едет в гранд каньон и толпится там</p>
                   </li>
                 </ul>
               </li>
@@ -99,18 +111,17 @@
           <div class="booking__intro">
             <p class="booking__text">Укажите предполагаемые даты поездки, <br class="tablet-width"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
-          <div class="booking__button">
-            <a class="booking__button--find" href="booking-form.html">Найти гостиницу</a>
+          <div class="booking__button-block">
+            <a class="booking__button" href="booking-form.html">Найти гостиницу</a>
           </div>
         </section>
         <section class="sedona-map">
+          <h2 class="visually-hidden">Карта города Седона</h2>
           <div class="sedona-map__img"></div>
         </section>
       </main>
       <footer class="page-footer">
-        <div class="page-footer__hashteg">
-          <p class="page-footer__hashteg--text">#Visitsedona</p>
-        </div>
+        <p class="page-footer__hashteg">#Visitsedona</p>
         <ul class="social-block">
           <li class="social-block__item">
             <a class="social-block__button" href="#">
@@ -132,7 +143,7 @@
             <a class="social-block__button" href="#">
               <span class="visually-hidden">Youtube</span>
               <svg class="social-block__svg" width="46" height="48">
-                <use xlink:href="#youtube" x="14px" y="17px"></use>
+                <use xlink:href="#youtube" x="14px" y="17px" width="19.9" height="14" fill="#ffffff"></use>
               </svg>
             </a>
           </li>
@@ -140,8 +151,8 @@
         <div class="page-footer__copyright">
           <span class="page-footer__copyright-text">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <svg class="page-footer__copyright-link--icon" width="35px" height="35px;">
-              <use xlink:href="#academy"></use>
+            <svg class="page-footer__copyright-link--icon" width="35" height="35">
+              <use xlink:href="#academy" width="26.9" height="34"></use>
             </svg>
           </a>
         </div>

@@ -34,16 +34,6 @@
     }
   }
 
-  &--text-block-one {
-    min-height: 152px;
-    padding: 0 15px;
-  }
-
-  &--text-block-two {
-    min-height: 152px;
-    padding: 0 15px;
-  }
-
   &--featerus {
     padding: 0;
     margin: 0;
@@ -51,6 +41,18 @@
 
   &--block {
     padding: 0;
+  }
+}
+
+.sedona-reason__text-block {
+  &--one {
+    min-height: 152px;
+    padding: 0 15px;
+  }
+
+  &--two {
+    min-height: 152px;
+    padding: 0 15px;
   }
 }
 
@@ -74,7 +76,7 @@
   background-size: cover;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/main-bridge-mobile@2x.jpg");
+    background-image: url("../img/photo-bridge-mobile@2x.jpg");
   }
 }
 
@@ -86,7 +88,7 @@
   text-transform: uppercase;
 }
 
-.sedon-reason__reason-description {
+.sedona-reason__reason-description {
   text-align: center;
   margin: 0;
   font-size: @sedona-regular-size;
@@ -94,11 +96,46 @@
   line-height: 23px;
 }
 
-.sedon-reason__reason-number {
+.sedona-reason__reason-number-block {
+  box-sizing: border-box;
+  width: 50px;
+  margin: 0 auto 13px auto;
+}
+
+.sedona-reason__reason-number {
+  position: relative;
   text-align: center;
-  margin: 0 0 13px 0;
+  margin: 0;
   font-size: @sedona-regular-size;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    left: 0;
+    top: 15px;
+    background-color: #000000;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    right: 0;
+    top: 14px;
+    background-color: #000000;
+  }
+
+  &--white&::before {
+    background-color: #ffffff;
+  }
+
+  &--white&::after {
+    background-color: #ffffff;
+  }
 }
 
 .sedona-reason__mini-block {
@@ -133,15 +170,17 @@
         display: none;
       }
     }
+  }
 
-    &--text-block-one {
+  .sedona-reason__text-block {
+    &--one {
       box-sizing: border-box;
       margin: 0;
       padding: 45px 43px 0 43px;
       width: 33.333333%;
     }
 
-    &--text-block-two {
+    &--two {
       box-sizing: border-box;
       order: 2;
       margin: 0;
@@ -151,12 +190,12 @@
   }
 
   .sedona-reason__reason-title {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     font-size: 21px;
   }
 
-  .sedon-reason__reason-number {
-    margin-bottom: 15px;
+  .sedona-reason__reason-number-block {
+    margin: 0 auto 18px auto;
   }
 
   .sedona-reason__photo-reason-one {
@@ -188,18 +227,18 @@
     width: 33.333333%;
 
     &--second-block {
-      padding: 43px 55px 0 55px;
+      padding: 43px 61px 0 61px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .sedona-reason__item {
-    &--text-block-one {
+  .sedona-reason__text-block {
+    &--one {
       padding: 52px 60px 0 60px;
     }
 
-    &--text-block-two {
+    &--two {
       padding: 52px 82px 0 82px;
     }
   }
@@ -223,10 +262,10 @@
   }
 
   .sedona-reason__reason-title {
-    margin: 0 42px 10px 42px;
+    margin: 0 42px 6px 42px;
   }
 
   .senoda-reason__bg .sedona-reason__reason-title {
-    margin: 0 72px 10px 72px;
+    margin: 0 72px 7px 72px;
   }
 }

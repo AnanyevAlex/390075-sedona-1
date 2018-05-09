@@ -1,35 +1,48 @@
 .info-form {
   margin: 0;
-  padding: 13px 20px 57px 20px;
+  padding: 13px 0 57px 0;
   background-color: #ffffff;
 }
 
 .info-form__fieldset {
   box-sizing: border-box;
+  position: relative;
   border: none;
   text-align: center;
   margin: 0;
-  padding: 20px 0 5px 0;
-  outline: 1px solid green;
+  padding: 20px 20px 5px 20px;
   font-size: @sedona-title-size;
   font-family: @sedona-title-font;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+    background-color: #000000;
+  }
+
   &--contacts {
-    padding: 20px 0 17px 0;
+    padding: 20px 20px 17px 20px;
   }
 
   &--impression {
-    padding: 20px 0 17px 0;
+    padding: 20px 20px 17px 20px;
   }
 
   &--place {
-    padding: 20px 0 0 0;
+    padding: 20px 20px 0 20px;
   }
 }
 
 .info-form__legend {
+  position: relative;
   margin: 0 0 20px 0;
 
   &--place {
@@ -197,6 +210,18 @@
     border-radius: 50%;
   }
 
+  &--impression:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &--impression:active::before {
+    background-color: #d5d5d5;
+  }
+
+  &--impression:active::after {
+    opacity: 0.3;
+  }
+
   &--place {
     position: relative;
     box-sizing: border-box;
@@ -215,6 +240,18 @@
     height: 55px;
     background-color: #f2f2f2;
     border-radius: 10%;
+  }
+
+  &--place:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &--place:active::before {
+    background-color: #d5d5d5;
+  }
+
+  &--place:active::after {
+    opacity: 0.3;
   }
 }
 
@@ -261,7 +298,6 @@
   .info-form__item {
     &--place {
       height: 50px;
-      outline: 1px solid green;
       margin-bottom: 31px;
     }
 
@@ -275,6 +311,10 @@
     flex-shrink: 0;
     width: 324px;
     padding: 0 0 0 0;
+
+    &::after {
+      display: none;
+    }
 
     &--name {
       padding: 0 0 0 60px;
@@ -293,6 +333,7 @@
     &--impression {
       order: -1;
       padding: 0 0 0 0;
+      border-right: 1px solid #e5e5e5;
     }
 
     &--comment {
@@ -309,6 +350,7 @@
   }
 
   .info-form__legend {
+    position: relative;
     font-size: 21px;
     line-height: 26px;
     text-align: left;
@@ -319,13 +361,76 @@
       margin-bottom: 25px;
     }
 
+    &--contacts::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 125px;
+      top: 11px;
+      left: 0;
+      background-color: #e5e5e5;
+    }
+
+    &--contacts::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 125px;
+      top: 11px;
+      right: 0;
+      background-color: #e5e5e5;
+    }
+
     &--place {
       text-align: center;
-      margin: 0 120px 40px 120px;
+      padding: 0 120px;
+      margin: 0 0 40px 0;
+    }
+
+    &--place::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 125px;
+      top: 25px;
+      left: 0;
+      background-color: #e5e5e5;
+    }
+
+    &--place::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 125px;
+      top: 25px;
+      right: 0;
+      background-color: #e5e5e5;
     }
 
     &--comment {
-      margin: 0 170px 60px 198px;
+      display: block;
+      padding: 0 198px;
+      margin: 0 0 60px 0;
+    }
+
+    &--comment::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 125px;
+      top: 13px;
+      left: 0;
+      background-color: #e5e5e5;
+    }
+
+    &--comment::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 125px;
+      top: 13px;
+      right: 0;
+      background-color: #e5e5e5;
     }
   }
 
@@ -444,15 +549,40 @@
     }
 
     &--place {
-      margin: 0 320px 40px 320px;
+      padding: 0 320px;
+    }
+
+    &--place::after {
+      width: 280px;
+    }
+
+    &--place::before {
+      width: 280px;
     }
 
     &--contacts {
       margin-bottom: 73px;
     }
 
+    &--contacts::after {
+      width: 280px;
+    }
+
+    &--contacts::before {
+      width: 280px;
+    }
+
     &--comment {
-      margin: 0 350px 59px 353px;
+      padding: 0 350px;
+      margin-bottom: 58px;
+    }
+
+    &--comment::after {
+      width: 280px;
+    }
+
+    &--comment::before {
+      width: 280px;
     }
   }
 
