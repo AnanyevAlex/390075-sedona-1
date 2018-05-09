@@ -107,7 +107,7 @@
   font-size: @sedona-regular-size;
   text-transform: uppercase;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     height: 2px;
@@ -117,7 +117,7 @@
     background-color: #000000;
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -127,11 +127,11 @@
     background-color: #000000;
   }
 
-  &--white&:before {
+  &--white&::before {
     background-color: #ffffff;
   }
 
-  &--white&:after {
+  &--white&::after {
     background-color: #ffffff;
   }
 }
