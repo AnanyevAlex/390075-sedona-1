@@ -24,37 +24,37 @@
   margin: 0;
 }
 
-.booking__button {
+.booking__button-block {
   box-sizing: border-box;
   margin: 0 auto 0 auto;
   text-align: center;
   width: 280px;
   height: 58px;
   background-color: @sedona-main-color;
+}
 
-  &--find {
-    display: block;
-    box-sizing: border-box;
-    padding-top: 16px;
-    width: 100%;
-    height: 100%;
-    font-size: 21px;
-    font-family: @sedona-title-font;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-  }
+.booking__button {
+  display: block;
+  box-sizing: border-box;
+  padding-top: 16px;
+  width: 100%;
+  height: 100%;
+  font-size: 21px;
+  font-family: @sedona-title-font;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
 
-  &--find:hover {
+  &:hover {
     background-color: #799cbd;
   }
 
-  &--find:active {
+  &:active {
     background-color: #6c94ba;
     color: rgba(255, 255, 255, 0.3);
   }
 
-  &--find:disabled {
+  &:disabled {
     background-color: #e4e4e4;
   }
 }
@@ -76,7 +76,7 @@
     margin: 0 auto 41px auto;
   }
 
-  .booking__button {
+  .booking__button-block {
     margin: 0 auto;
     width: 460px;
   }
@@ -84,10 +84,10 @@
 
 @media (min-width: @desktop-width) {
   .booking {
-    padding: 50px 20px 68px 20px;
+    padding: 50px 20px 60px 20px;
   }
 
   .booking__intro {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 }

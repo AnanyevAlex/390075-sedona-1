@@ -34,16 +34,6 @@
     }
   }
 
-  &--text-block-one {
-    min-height: 152px;
-    padding: 0 15px;
-  }
-
-  &--text-block-two {
-    min-height: 152px;
-    padding: 0 15px;
-  }
-
   &--featerus {
     padding: 0;
     margin: 0;
@@ -51,6 +41,18 @@
 
   &--block {
     padding: 0;
+  }
+}
+
+.sedona-reason__text-block {
+  &--one {
+    min-height: 152px;
+    padding: 0 15px;
+  }
+
+  &--two {
+    min-height: 152px;
+    padding: 0 15px;
   }
 }
 
@@ -74,7 +76,7 @@
   background-size: cover;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/main-bridge-mobile@2x.jpg");
+    background-image: url("../img/photo-bridge-mobile@2x.jpg");
   }
 }
 
@@ -168,15 +170,17 @@
         display: none;
       }
     }
+  }
 
-    &--text-block-one {
+  .sedona-reason__text-block {
+    &--one {
       box-sizing: border-box;
       margin: 0;
       padding: 45px 43px 0 43px;
       width: 33.333333%;
     }
 
-    &--text-block-two {
+    &--two {
       box-sizing: border-box;
       order: 2;
       margin: 0;
@@ -229,12 +233,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .sedona-reason__item {
-    &--text-block-one {
+  .sedona-reason__text-block {
+    &--one {
       padding: 52px 60px 0 60px;
     }
 
-    &--text-block-two {
+    &--two {
       padding: 52px 82px 0 82px;
     }
   }
