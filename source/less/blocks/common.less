@@ -2,7 +2,7 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-  font-family: "ptsansbold"; /* Гарнитура шрифта */
+  font-family: "ptsans"; /* Гарнитура шрифта */
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff"); /* Путь к файлу со шрифтом */
 }
 
@@ -42,10 +42,11 @@ input[type="radio"].visually-hidden {
 
 .container {
   position: relative;
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: #ffffff;
+  box-shadow: 0 0 20px -7px #000000;
 }
 
 .desktop-width {
@@ -54,7 +55,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: @mobile-width-only) {
   .container {
-    max-width: 650px;
+    max-width: 320px;
   }
 
   .tablet-width {

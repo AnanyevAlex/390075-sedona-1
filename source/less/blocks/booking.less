@@ -8,13 +8,14 @@
   margin: 0 0 19px 0;
   text-align: center;
   font-size: 21px;
-  font-family: @sedona-title-font;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .booking__intro {
   margin: 0 auto 35px auto;
   line-height: 24px;
+  color: #333333;
   text-align: center;
   font-size: @sedona-regular-size;
   text-transform: uppercase;
@@ -29,28 +30,28 @@
   margin: 0 auto 0 auto;
   text-align: center;
   width: 280px;
-  height: 58px;
+  min-height: 58px;
   background-color: @sedona-main-color;
 }
 
 .booking__button {
   display: block;
   box-sizing: border-box;
-  padding-top: 16px;
+  padding: 16px;
   width: 100%;
   height: 100%;
   font-size: 21px;
-  font-family: @sedona-title-font;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
 
   &:hover {
-    background-color: #799cbd;
+    background-color: #669ec1;
   }
 
   &:active {
-    background-color: #6c94ba;
+    background-color: #5596be;
     color: rgba(255, 255, 255, 0.3);
   }
 
@@ -84,10 +85,10 @@
 
 @media (min-width: @desktop-width) {
   .booking {
-    padding: 50px 20px 60px 20px;
+    padding: 50px 20px 67px 20px;
   }
 
   .booking__intro {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 }

@@ -12,7 +12,7 @@
   margin: 0;
   padding: 20px 20px 5px 20px;
   font-size: @sedona-title-size;
-  font-family: @sedona-title-font;
+  font-weight: bold;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
 
@@ -25,7 +25,7 @@
     right: 0;
     margin: 0 auto;
     top: 0;
-    background-color: #000000;
+    background-color: #e5e5e5;
   }
 
   &--contacts {
@@ -97,7 +97,7 @@
 .info-form__input {
   box-sizing: border-box;
   border: none;
-  width: 100%;
+  width: 68%;
   height: 58px;
   flex-grow: 1;
   text-align: left;
@@ -106,7 +106,7 @@
   background-color: #f2f2f2;
   font: inherit;
   font-size: @sedona-title-size;
-  font-family: @sedona-title-font;
+  font-weight: bold;
   color: rgba(0, 0, 0, 1);
 
   &--contacts {
@@ -157,7 +157,7 @@
   padding: 15px 0 0 20px;
   font: inherit;
   font-size: @sedona-title-size;
-  font-family: @sedona-title-font;
+  font-weight: bold;
   color: rgba(0, 0, 0, 1);
   background-color: #f2f2f2;
 
@@ -179,12 +179,16 @@
     font-size: 14px;
     text-transform: uppercase;
     padding: 18px 13px 0 0;
+    color: #333333;
+    font-weight: 400;
   }
 
   &--contacts {
     font-family: "ptsans", "arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
+    color: #333333;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: left;
     padding: 0 0 0 22px;
@@ -265,20 +269,21 @@
   margin: 0 auto;
   text-align: center;
   width: 280px;
-  height: 58px;
+  min-height: 58px;
+  font-family: "ptsans","arial",sans-serif;
   background-color: @sedona-main-color;
   font-size: 21px;
-  font-family: @sedona-title-font;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
 
   &:hover {
-    background-color: #799cbd;
+    background-color: #669ec1;
   }
 
   &:active {
-    background-color: #6c94ba;
+    background-color: #5596be;
     color: rgba(255, 255, 255, 0.3);
   }
 }
@@ -470,7 +475,7 @@
     display: flex;
     justify-content: space-between;
     width: 648px;
-    min-height: 117px;
+    margin-bottom: 60px;
   }
 
   .info-form__text {
@@ -480,7 +485,7 @@
   .info-form__button {
     margin: 0;
     width: 325px;
-    padding: 0 13px 0 0;
+    padding-right: 15px;
   }
 
   .info-form__require {
@@ -608,7 +613,7 @@
   .info-form__input {
     &--contacts {
       flex-grow: 0;
-      width: 316px;
+      width: 315px;
     }
 
     &--impression:checked + .info-form__label--impression::after {
@@ -618,10 +623,11 @@
 
   .info-form__btn {
     width: 960px;
-    min-height: 123px;
+    margin-bottom: 67px;
   }
 
   .info-form__button {
     width: 480px;
+    padding: 0;
   }
 }

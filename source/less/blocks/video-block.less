@@ -14,23 +14,22 @@
 .video-block__title {
   margin: 0 0 26px 0;
   font-size: @sedona-title-size;
-  font-family: @sedona-title-font;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
-.video-blcok__discription {
+.video-block__discription {
   margin: 0;
   font-size: @sedona-regular-size;
   text-transform: uppercase;
   line-height: 24px;
+  color: #333333;
 }
 
 @media (max-width: @mobile-width-only) {
-  .video-block__video {
-    &--img {
-      width: 100%;
-      height: auto;
-    }
+  .video-block__img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -52,7 +51,7 @@
     line-height: 36px;
   }
 
-  .video-blcok__discription {
+  .video-block__discription {
     margin: 0;
   }
 
