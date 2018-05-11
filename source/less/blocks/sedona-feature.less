@@ -10,18 +10,6 @@
   margin-bottom: 17px;
   min-height: 80px;
 
-  &--food {
-    margin-bottom: 38px;
-  }
-}
-
-.sedona-feature__title {
-
-  margin: 0 0 13px 0;
-  font-size: @sedona-title-size;
-  font-weight: bold;
-  text-transform: uppercase;
-
   &::before {
     content: "";
     position: absolute;
@@ -45,6 +33,19 @@
   &--food::before {
     background-image: url("../img/icon-burger.svg");
   }
+
+  &--food {
+    margin-bottom: 38px;
+  }
+}
+
+.sedona-feature__title {
+  margin: 0 0 13px 0;
+  font-size: @sedona-title-size;
+  font-weight: bold;
+  text-transform: uppercase;
+
+
 }
 
 .sedona-feature__description {
@@ -69,24 +70,10 @@
     margin: 0;
     padding: 140px 45px 0 45px;
 
-    &--souvenirs {
-      order: 2;
-    }
-
-    &--food {
-      padding: 140px 49px 0 49px;
-    }
-  }
-
-  .sedona-feature__title {
-    font-size: 21px;
-    margin-bottom: 20px;
-    text-align: center;
-
     &::before {
       content: "";
       position: absolute;
-      width: 75px;
+      width: 76px;
       height: 75px;
       top: 40px;
       left: 0;
@@ -108,5 +95,19 @@
     &--food::before {
       background-image: url("../img/icon-burger.svg");
     }
+
+    &--souvenirs {
+      order: 2;
+    }
+
+    &--food {
+      padding: 140px 49px 0 49px;
+    }
+  }
+
+  .sedona-feature__title {
+    font-size: 21px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 }

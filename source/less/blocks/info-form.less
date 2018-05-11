@@ -608,6 +608,14 @@
       text-align: center;
       padding: 15px 0 0 77px;
     }
+
+    &--mountain::before {
+      left: 8px;
+    }
+
+    &--park::before {
+      left: 15px;
+    }
   }
 
   .info-form__input {
@@ -618,6 +626,14 @@
 
     &--impression:checked + .info-form__label--impression::after {
       left: 20px;
+    }
+
+    &--place:checked + .info-form__label--park::after {
+      left: 31px;
+    }
+
+    &--place:checked + .info-form__label--mountain::after {
+      left: 25px;
     }
   }
 
